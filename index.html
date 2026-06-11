@@ -1607,16 +1607,17 @@
             observer.observe(item);
 
         });
-        </script>
-        <script>
-        fetch('https://api.countapi.xyz/hit/emmdev410-portafolio/visitas')
-        .then(response => response.json())
-        .then(data => {
-            document.getElementById('visit-count').textContent = data.value;
-        })
-        .catch(() => {
-            document.getElementById('visit-count').textContent = '--';
-        });
-        </script>
+    </script>
+    <script>
+    fetch('https://api.visitorbadge.io/api/visitors?path=emmdev410.github.io/portfolio-emmanuel')
+    .then(res => res.json())
+    .then(data => {
+        document.getElementById('visit-count').textContent =
+            data.total || '0';
+    })
+    .catch(() => {
+        document.getElementById('visit-count').textContent = '0';
+    });
+    </script>
 </body>
 </html>
