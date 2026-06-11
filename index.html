@@ -1157,13 +1157,22 @@
 
     <footer class="footer">
 
-        <p>
-            © 2026 Emmanuel Palma Solís
-        </p>
+        <div class="footer-content">
 
-        <p>
-            Software Solutions Developer
-        </p>
+            <div>
+                <p>© 2026 Emmanuel Palma Solís</p>
+                <p>Software Solutions Developer</p>
+            </div>
+
+            <div class="visitor-counter">
+
+                <span class="status-dot"></span>
+
+                <span id="visit-count">...</span>
+
+            </div>
+
+        </div>
 
     </footer>
     <script>
@@ -1597,6 +1606,16 @@
             item.classList.add("reveal");
             observer.observe(item);
 
+        });
+        </script>
+        <script>
+        fetch('https://api.countapi.xyz/hit/emmdev410-portafolio/visitas')
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('visit-count').textContent = data.value;
+        })
+        .catch(() => {
+            document.getElementById('visit-count').textContent = '--';
         });
         </script>
 </body>
