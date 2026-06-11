@@ -1,66 +1,1603 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KSGS4ML3XW"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-KSGS4ML3XW');
+    </script>
+
+    <meta name="description" content="Portafolio profesional de Emmanuel Palma Solís, desarrollador Android, automatización y soluciones digitales.">
+
+    <meta name="keywords" content="Android, Kotlin, SQLite, Room, MVVM, Python, OCR, Portafolio, Desarrollador">
+
+    <meta name="author" content="Emmanuel Palma Solís">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emmanuel Palma Solís | Portfolio</title>
+    <title>Emmanuel Palma Solís | Portafolio</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <nav class="navbar">
-
         <div class="logo">
-            EP
+            <img
+                src="assets//icons/logo-edev.png"
+                alt="EDev"
+                id="logoExpandible"
+            >
         </div>
-
-        <ul>
-            <li>Inicio</li>
-            <li>Sobre mí</li>
-            <li>Proyectos</li>
-            <li>Tecnologías</li>
-            <li>Contacto</li>
+        <a href="#inicio" class="nav-center-title">
+            EDev
+        </a>
+        <button class="nav-options" id="navOptions" type="button" aria-label="Abrir opciones">
+            ☰
+        </button>
+        <ul class="desktop-nav">
+            <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+            <li>
+                <a href="#soluciones" class="nav-link">
+                    Soluciones
+                </a>
+            </li>
+            <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+            <li><a href="#tecnologias" class="nav-link">Tecnologías</a></li>
+            <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+            <li><a href="#trayectoria" class="nav-link">Trayectoria</a></li>
+            <li><a href="#formacion" class="nav-link">Formación</a></li>
+            <li><a href="#contacto" class="nav-link">Contacto</a></li>
         </ul>
 
-        <button class="cv-btn">
-            Descargar CV
-        </button>
+        <a href="assets/documents/cv-emmanuel-palma-solis.pdf"
+        download
+        class="cv-btn desktop-cv">
+        Descargar CV
+        </a>
 
+        <div class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                <li>
+                    <a href="#soluciones" class="nav-link">
+                        Soluciones
+                    </a>
+                </li>
+                <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+                <li><a href="#tecnologias" class="nav-link">Tecnologías</a></li>
+                <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                <li><a href="#trayectoria" class="nav-link">Trayectoria</a></li>
+                <li><a href="#formacion" class="nav-link">Formación</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+
+            <a href="assets/documents/cv-emmanuel-palma-solis.pdf" download class="cv-btn">
+                Descargar CV
+            </a>
+        </div>
     </nav>
-    <section class="hero">
+
+    <section class="hero" id="inicio">
 
         <div class="hero-content">
 
-            <p class="hero-tag">
-                Software Solutions Developer
+            <p class="hero-tag stretch-effect">DESARROLLADOR DE SOFTWARE</p>
+
+            <p class="hero-quote stretch-effect">
+                Transformando esfuerzo constante en soluciones reales.
             </p>
 
-            <h1>
-                Emmanuel Palma Solís
+            <h1 class="hero-name stretch-effect">
+                <span class="hero-prefix">Hola, soy</span>
+                <span class="hero-main">Emmanuel Palma Solís</span>
             </h1>
 
-            <h2>
-                Construyo software que transforma procesos en soluciones reales.
-            </h2>
-
-            <p class="hero-description">
-                Desarrollo aplicaciones, automatizaciones y herramientas digitales
-                enfocadas en resolver problemas reales para personas y negocios.
+            <p class="hero-description stretch-effect">
+                Desarrollo aplicaciones web modernas, funcionales y optimizadas
+                para brindar experiencias claras, rápidas y profesionales.
             </p>
 
             <div class="hero-buttons">
-                <button>Ver Proyectos</button>
-                <button>Descargar CV</button>
+
+                <a href="#proyectos" class="hero-link-btn">
+                    Ver proyectos
+                    <span>→</span>
+                </a>
+
+                <a
+                    href="#contacto"
+                    class="hero-link-btn hero-outline-btn"
+                >
+                    Contactarme
+                    <span>✈</span>
+                </a>
+
             </div>
 
         </div>
 
         <div class="hero-image">
+            <div class="orbit orbit-1">
+                <div class="orbit-slot slot-top">
+                    <div class="dedication"><span>Android</span></div>
+                </div>
+
+                <div class="orbit-slot slot-right">
+                    <div class="dedication"><span>Páginas Web</span></div>
+                </div>
+
+                <div class="orbit-slot slot-bottom">
+                    <div class="dedication"><span>Automatización</span></div>
+                </div>
+
+                <div class="orbit-slot slot-left">
+                    <div class="dedication"><span>Soluciones</span></div>
+                </div>
+            </div>
+
+            <div class="orbit orbit-2">
+                <div class="orbit-slot slot-top-right">
+                    <div class="dedication"><span>Responsable</span></div>
+                </div>
+
+                <div class="orbit-slot slot-bottom-right">
+                    <div class="dedication"><span>Autodidacta</span></div>
+                </div>
+
+                <div class="orbit-slot slot-bottom-left">
+                    <div class="dedication"><span>Adicto a programar</span></div>
+                </div>
+
+                <div class="orbit-slot slot-top-left">
+                    <div class="dedication"><span>Resolutivo</span></div>
+                </div>
+            </div>
+
+            <div class="hero-image-ring"></div>
+
             <img src="assets/images/profile.jpg" alt="Emmanuel Palma Solís">
+        </div>
+    </section>
+
+
+    <section class="services" id="soluciones">
+
+
+            <div class="section-header reveal">
+
+                <span class="section-tag">SOLUCIONES</span>
+
+                <h2 class="glow-title">
+                    Soluciones que desarrollo
+                </h2>
+
+                <p>
+                    Desarrollo aplicaciones Android, automatizaciones y soluciones digitales
+                    diseñadas para resolver problemas reales y mejorar la eficiencia.
+                </p>
+
+            </div>
+        
+        <div class="services-grid">
+
+            <div class="service-card reveal"
+                data-type="software"
+                onclick="toggleService('software')">
+
+                <h3>💻 Desarrollo de Software</h3>
+
+                <p>
+                    Aplicaciones Android, sistemas y herramientas diseñadas para resolver necesidades reales.
+                </p>
+                <div class="service-details">
+
+                    <h4>Tecnologías principales</h4>
+
+                    <ul>
+                        <li>Kotlin + Android Studio</li>
+                        <li>Room Database</li>
+                        <li>SQLite</li>
+                        <li>Arquitectura MVVM</li>
+                        <li>Aplicaciones Offline First</li>
+                        <li>Interfaces modernas</li>
+                    </ul>
+
+                    <h4>Proyectos relacionados</h4>
+
+                    <ul>
+                        <li>DepotLink POS Mobile</li>
+                        <li>PepsOCR</li>
+                        <li>Smart POS</li>
+                        <li>Taquería POS Android</li>
+                    </ul>
+
+                    <p>
+                        Desarrollo aplicaciones Android enfocadas en resolver
+                        necesidades reales mediante arquitecturas modernas,
+                        bases de datos locales y experiencias optimizadas.
+                    </p>
+
+                </div>
+            </div>
+    
+
+            <div class="service-card reveal"
+                data-type="automation"
+                onclick="toggleService('automation')">
+
+                <h3>⚙️ Automatización</h3>
+
+                <p>
+                    Automatización de procesos, OCR y herramientas para reducir trabajo manual.
+                </p>
+                <div class="service-details">
+
+                    <h4>Herramientas utilizadas</h4>
+
+                    <ul>
+                        <li>Python</li>
+                        <li>OCR</li>
+                        <li>OpenCV</li>
+                        <li>Procesamiento de imágenes</li>
+                        <li>Extracción de datos</li>
+                        <li>Automatización de tareas</li>
+                    </ul>
+
+                    <h4>Aplicaciones</h4>
+
+                    <ul>
+                        <li>Lectura automática de documentos</li>
+                        <li>Reconocimiento de texto</li>
+                        <li>Captura de información</li>
+                        <li>Reducción de trabajo manual</li>
+                    </ul>
+
+                    <p>
+                        Desarrollo herramientas orientadas a automatizar
+                        procesos repetitivos y mejorar la eficiencia
+                        mediante inteligencia visual y OCR.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="service-card reveal"
+                data-type="business"
+                onclick="toggleService('business')">
+
+                <h3>📈 Soluciones para Negocios</h3>
+
+                <p>
+                    Software enfocado en mejorar operaciones y aumentar la eficiencia de negocios.
+                </p>
+                <div class="service-details">
+
+                    <h4>Objetivos</h4>
+
+                    <ul>
+                        <li>Reducir tiempo operativo</li>
+                        <li>Disminuir errores manuales</li>
+                        <li>Mejorar productividad</li>
+                        <li>Automatizar tareas</li>
+                    </ul>
+
+                    <h4>Soluciones desarrolladas</h4>
+
+                    <ul>
+                        <li>Puntos de venta</li>
+                        <li>Control de inventario</li>
+                        <li>Gestión de usuarios</li>
+                        <li>Reportes</li>
+                        <li>Control de merma</li>
+                        <li>Optimización operativa</li>
+                    </ul>
+
+                    <p>
+                        Cada proyecto está diseñado para resolver problemas
+                        reales de operación y ayudar a los negocios a tomar
+                        mejores decisiones mediante información organizada.
+                    </p>
+
+                </div>
+            </div>
+        <div class="service-card reveal"
+            data-type="web"
+            onclick="toggleService('web')">
+
+            <h3>🌐 Desarrollo Web</h3>
+
+            <p>
+                Sitios web modernos, portafolios profesionales
+                y soluciones digitales diseñadas para negocios.
+            </p>
+
+            <div class="service-details">
+
+                <h4>¿Qué desarrollo?</h4>
+
+                <ul>
+                    <li>Landing Pages</li>
+                    <li>Portafolios profesionales</li>
+                    <li>Sitios para negocios</li>
+                    <li>Diseño responsivo</li>
+                    <li>Integración con WhatsApp</li>
+                    <li>Animaciones modernas</li>
+                    <li>Formularios de contacto</li>
+                </ul>
+
+                <h4>Tecnologías utilizadas</h4>
+
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>GitHub Pages</li>
+                    <li>Responsive Design</li>
+                </ul>
+
+                <h4>Experiencia actual</h4>
+
+                <p>
+                    Actualmente desarrollo proyectos web propios
+                    enfocados en diseño moderno, experiencia de usuario
+                    y presentación profesional de productos y servicios.
+                </p>
+
+            </div>
+
+        </div>
+
         </div>
 
     </section>
 
+    <section class="about-section" id="sobre-mi">
+
+        <div class="about-left reveal">
+
+            <span class="section-tag">SOBRE MÍ</span>
+
+            <h2 class="glow-title">
+                Aprendo construyendo soluciones reales.
+            </h2>
+
+            <p>
+                Soy desarrollador autodidacta apasionado por la tecnología y la
+                resolución de problemas mediante software.
+            </p>
+
+            <p>
+                Mi aprendizaje ha sido principalmente práctico, desarrollando
+                proyectos propios y enfrentando desafíos reales que me han permitido
+                adquirir experiencia en desarrollo Android, automatización de
+                procesos, bases de datos, OCR, integración de sistemas y desarrollo web.
+            </p>
+
+            <p>
+                Me adapto rápidamente a nuevas tecnologías y disfruto aprender
+                herramientas que permitan construir soluciones más eficientes.
+            </p>
+
+        </div>
+
+        <div class="about-right reveal">
+
+            <div class="about-card">
+                <h3>6+</h3>
+                <p>Proyectos desarrollados</p>
+            </div>
+
+            <div class="about-card">
+                <h3>2026</h3>
+                <p>Inicio de proyectos de software</p>
+            </div>
+
+            <div class="about-card">
+                <h3>Android</h3>
+                <p>Especialización principal</p>
+            </div>
+
+            <div class="about-card">
+                <h3>CEPCI</h3>
+                <p>Base técnica en informática</p>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="tech-section" id="tecnologias">
+
+        <div class="section-header">
+            <span class="section-tag">STACK</span>
+
+            <h2 class="glow-title">
+                Tecnologías
+            </h2>
+
+            <p>
+                Herramientas y tecnologías que utilizo para desarrollar
+                aplicaciones, automatizaciones y soluciones digitales.
+            </p>
+        </div>
+
+        <div class="tech-grid">
+
+            <div class="tech-item stretch-effect" onclick="showTech('kotlin')">Kotlin</div>
+            <div class="tech-item stretch-effect" onclick="showTech('android')">Android Studio</div>
+            <div class="tech-item stretch-effect" onclick="showTech('room')">Room</div>
+            <div class="tech-item stretch-effect" onclick="showTech('sqlite')">SQLite</div>
+            <div class="tech-item stretch-effect" onclick="showTech('mvvm')">MVVM</div>
+            <div class="tech-item stretch-effect" onclick="showTech('python')">Python</div>
+            <div class="tech-item stretch-effect" onclick="showTech('flet')">Flet</div>
+            <div class="tech-item stretch-effect" onclick="showTech('opencv')">OpenCV</div>
+            <div class="tech-item stretch-effect" onclick="showTech('ocr')">OCR</div>
+            <div class="tech-item stretch-effect" onclick="showTech('git')">Git</div>
+            <div class="tech-item stretch-effect" onclick="showTech('github')">GitHub</div>
+            <div class="tech-item stretch-effect" onclick="showTech('html')">HTML</div>
+            <div class="tech-item stretch-effect" onclick="showTech('css')">CSS</div>
+
+        </div>
+        <div class="tech-details" id="techDetails">
+
+            <h3 id="techTitle">Selecciona una tecnología</h3>
+
+            <p id="techDescription">
+                Haz clic sobre cualquier tecnología para ver información detallada.
+            </p>
+
+        </div>
+
+    </section>
+    <section id="proyectos" class="projects-section">
+
+            <div class="section-header">
+                <span class="section-tag">PORTAFOLIO</span>
+
+                <h2 class="glow-title">
+                    Proyectos Destacados
+                </h2>
+
+                <p>
+                    Aplicaciones y sistemas desarrollados para resolver problemas reales
+                    en negocios y operaciones diarias.
+                </p>
+            </div>
+
+            <!-- PROYECTO 1 -->
+            <div class="project-card" data-gallery="depotlink">
+
+                <div class="project-image">
+
+                    <button class="gallery-arrow prev">❮</button>
+
+                    <img
+                        src="assets/projects/depotlink-pos/cover.png"
+                        alt="DepotLink POS Mobile"
+                        class="project-media gallery-image"
+                    >
+
+                    <button class="gallery-arrow next">❯</button>
+
+                    <div class="gallery-dots"></div>
+                
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-number">01</span>
+
+                    <h3>DepotLink POS Mobile</h3>
+
+                    <div class="tech-stack">
+                        <span>Kotlin</span>
+                        <span>Room</span>
+                        <span>SQLite</span>
+                        <span>MVVM</span>
+                    </div>
+
+                    <p>
+                        Sistema de punto de venta móvil desarrollado para Android.
+                        Permite gestionar usuarios, productos, ventas y operaciones
+                        comerciales mediante una arquitectura moderna basada en MVVM.
+                    </p>
+
+                    <ul>
+                        <li>✓ Login local</li>
+                        <li>✓ Gestión de productos</li>
+                        <li>✓ Registro de ventas</li>
+                        <li>✓ Base de datos Room</li>
+                    </ul>
+
+                    <div class="project-buttons">
+
+                        <a href="#" class="btn-primary">
+                            Ver Proyecto
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        
+
+            <!-- PROYECTO 2 -->
+
+            <div class="project-card" data-gallery="taqueriayeshua">
+
+                <div class="project-image">
+
+                    <button class="gallery-arrow prev">❮</button>
+
+                    <img
+                        src="assets/projects/taqueria-yeshua/cover.png"
+                        alt="Taquería Yeshua POS"
+                        class="project-media gallery-image"
+                    >
+
+                    <button class="gallery-arrow next">❯</button>
+
+                    <div class="gallery-dots"></div>
+
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-number">02</span>
+
+                    <h3>Taquería Yeshua POS</h3>
+
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Flet</span>
+                        <span>SQLite</span>
+                        <span>Flutter</span>
+                    </div>
+
+                    <p>
+                        Punto de venta móvil diseñado para administrar
+                        mesas, pedidos y ventas en tiempo real.
+                    </p>
+
+                    <ul>
+                        <li>✓ Gestión de mesas</li>
+                        <li>✓ Pedidos múltiples</li>
+                        <li>✓ Tema claro y oscuro</li>
+                        <li>✓ Interfaz táctil optimizada</li>
+                    </ul>
+
+                    <div class="project-buttons">
+
+                        <a href="#" class="btn-primary">
+                            Ver Proyecto
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- PROYECTO 3 -->
+
+            <div class="project-card" data-gallery="pepsocr">
+
+                <div class="project-image">
+
+                    <button class="gallery-arrow prev">❮</button>
+
+                    <img
+                        src="assets/projects/pepsocr/cover.png"
+                        alt="PepsOCR"
+                        class="project-media gallery-image"
+                    >
+
+                    <button class="gallery-arrow next">❯</button>
+
+                    <div class="gallery-dots"></div>
+
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-number">03</span>
+
+                    <h3>PepsOCR</h3>
+
+                    <div class="tech-stack">
+                        <span>Kotlin</span>
+                        <span>Android Studio</span>
+                        <span>ML Kit</span>
+                        <span>Firebase</span>
+                        <span>Room</span>
+                        <span>SQLite</span>
+                    </div>
+
+                    <p>
+                        Plataforma Android experimental diseñada para reducir la merma mediante
+                        identificación automática de productos y fechas de caducidad utilizando
+                        ML Kit, Room Database y sincronización con Firebase. El sistema opera
+                        bajo una arquitectura Offline First y mejora su precisión mediante
+                        aprendizaje asistido por usuarios.
+                    </p>
+
+                    <ul>
+                        <li>✓ Reconocimiento mediante Google ML Kit</li>
+                        <li>✓ Base de datos local con Room Database</li>
+                        <li>✓ Sincronización inteligente con Firebase</li>
+                        <li>✓ Operación sin conexión a internet</li>
+                        <li>✓ Aprendizaje continuo mediante correcciones</li>
+                        <li>✓ Gestión preventiva de caducidades</li>
+                    </ul>
+
+                    <div class="project-buttons">
+
+                        <a href="#" class="btn-primary">
+                            Ver Proyecto
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- PROYECTO 4 -->
+
+            <div class="project-card" data-gallery="smartpos">
+
+                <div class="project-image">
+
+                    <button class="gallery-arrow prev">❮</button>
+
+                    <img
+                        src="assets/projects/smart-pos/cover.png"
+                        alt="Smart POS"
+                        class="project-media gallery-image"
+                    >
+
+                    <button class="gallery-arrow next">❯</button>
+
+                    <div class="gallery-dots"></div>
+
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-number">04</span>
+
+                    <h3>Smart POS</h3>
+
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Flet</span>
+                        <span>Flutter</span>
+                        <span>SQLite</span>
+                    </div>
+
+                    <p>
+                        Sistema de punto de venta desarrollado utilizando
+                        Python y Flet con almacenamiento local, historial,
+                        gestión de productos y una interfaz moderna enfocada
+                        en pequeños negocios.
+                    </p>
+
+                    <ul>
+                        <li>✓ Gestión de productos</li>
+                        <li>✓ Registro de ventas</li>
+                        <li>✓ Historial</li>
+                        <li>✓ Persistencia local</li>
+                        <li>✓ Interfaz moderna</li>
+                    </ul>
+
+                    <div class="project-buttons">
+
+                        <a href="#" class="btn-primary">
+                            Ver Proyecto
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- PROYECTO 5 -->
+
+            <div class="project-card" data-gallery="taqueriapos">
+
+                <div class="project-image">
+
+                    <button class="gallery-arrow prev">❮</button>
+
+                    <img
+                        src="assets/projects/taqueria-pos-android/cover.png"
+                        alt="Taquería POS Android"
+                        class="project-media gallery-image"
+                    >
+
+                    <button class="gallery-arrow next">❯</button>
+
+                    <div class="gallery-dots"></div>
+
+
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-number">05</span>
+
+                    <h3>Taquería POS Android</h3>
+
+                    <div class="tech-stack">
+                        <span>Kotlin</span>
+                        <span>Android Studio</span>
+                        <span>Room</span>
+                        <span>SQLite</span>
+                        <span>MVVM</span>
+                    </div>
+
+                    <p>
+                        Aplicación Android desarrollada como una evolución de
+                        Taquería Yeshua POS. El objetivo fue simplificar la
+                        experiencia del usuario, reduciendo la cantidad de
+                        pantallas y optimizando el flujo de trabajo para
+                        negocios de alimentos.
+                    </p>
+
+                    <ul>
+                        <li>✓ Registro rápido de pedidos</li>
+                        <li>✓ Operación offline</li>
+                        <li>✓ Room Database</li>
+                        <li>✓ Gestión de productos</li>
+                        <li>✓ Historial de ventas</li>
+                    </ul>
+
+                    <div class="project-buttons">
+
+                        <a href="#" class="btn-primary">
+                            Ver Proyecto
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- PROYECTO 6 -->
+
+            <div class="project-card" data-gallery="portfolio">
+
+                <div class="project-image">
+
+                    <button class="gallery-arrow prev">❮</button>
+
+                    <img
+                        src="assets/projects/portafolio/cover.png"
+                        alt="Portafolio Profesional"
+                        class="project-media gallery-image"
+                    >
+
+                    <button class="gallery-arrow next">❯</button>
+
+                    <div class="gallery-dots"></div>
+
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-number">06</span>
+
+                    <h3>Portafolio Profesional</h3>
+
+                    <div class="tech-stack">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>GitHub Pages</span>
+                    </div>
+
+                    <p>
+                        Portafolio profesional desarrollado para presentar
+                        proyectos, experiencia, formación y habilidades
+                        técnicas mediante una interfaz moderna y responsive.
+                    </p>
+
+                    <ul>
+                        <li>✓ Diseño responsive</li>
+                        <li>✓ Descarga de CV</li>
+                        <li>✓ Navegación dinámica</li>
+                        <li>✓ Optimizado para GitHub Pages</li>
+                    </ul>
+
+                    <div class="project-buttons">
+
+                        <a href="#" class="btn-primary">
+                            Ver Proyecto
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    <section class="trayectoria-section" id="trayectoria">
+
+        <span class="section-tag">
+            TRAYECTORIA
+        </span>
+
+        <h2 class="glow-title">
+            Mi evolución profesional
+        </h2>
+
+        <div class="timeline-item"
+            data-year="cepci"
+            onclick="toggleTimeline('cepci')">
+
+            <h3>2010 - 2011</h3>
+
+            <p>
+                Formación técnica en informática, soporte técnico,
+                diseño digital y herramientas empresariales en CEPCI.
+            </p>
+
+            <div class="timeline-details">
+
+                <h4>Conocimientos adquiridos</h4>
+
+                <ul>
+                    <li>Microsoft Office</li>
+                    <li>Soporte técnico</li>
+                    <li>Mantenimiento de equipos</li>
+                    <li>CorelDRAW</li>
+                    <li>Photoshop</li>
+                    <li>Aspel COI y SAE</li>
+                    <li>AutoCAD Basico</li>
+                </ul>
+
+                <p>
+                    Esta etapa fue mi primer contacto formal con la informática
+                    y sentó las bases de mi interés por la tecnología.
+                </p>
+
+            </div>
+
+        </div>
+
+            <div class="timeline-item"
+                data-year="tokio"
+                onclick="toggleTimeline('tokio')">
+
+                <h3>2025</h3>
+
+                <p>
+                    Formación en programación Python y automatización
+                    de procesos en Tokio School.
+                </p>
+
+                <div class="timeline-details">
+
+                    <h4>Competencias adquiridas</h4>
+
+                    <ul>
+                        <li>Python</li>
+                        <li>Lógica de programación</li>
+                        <li>Estructuras de control</li>
+                        <li>Resolución de problemas</li>
+                        <li>Automatización de procesos</li>
+                        <li>Buenas prácticas de desarrollo</li>
+                    </ul>
+
+                    <p>
+                        Esta formación fortaleció mis bases como desarrollador y me permitió
+                        comenzar a crear herramientas y automatizaciones reales.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="timeline-item"
+                data-year="android"
+                onclick="toggleTimeline('android')">
+
+                <h3>2026</h3>
+
+                <p>
+                    Desarrollo de aplicaciones Android utilizando
+                    Kotlin, SQLite y Room Database.
+                </p>
+
+                <div class="timeline-details">
+
+                    <h4>Tecnologías dominadas</h4>
+
+                    <ul>
+                        <li>Kotlin</li>
+                        <li>Android Studio</li>
+                        <li>Room Database</li>
+                        <li>SQLite</li>
+                        <li>MVVM</li>
+                        <li>Interfaces modernas</li>
+                    </ul>
+
+                    <p>
+                        Comencé a desarrollar aplicaciones Android completas enfocadas
+                        en negocios, productividad y soluciones móviles reales.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="timeline-item"
+                data-year="projects"
+                onclick="toggleTimeline('projects')">
+
+                <h3>2026</h3>
+
+                <p>
+                    Creación de proyectos reales como DepotLink POS Mobile,
+                    PepsOCR, Smart POS y App Taquería.
+                </p>
+
+                <div class="timeline-details">
+
+                    <h4>Proyectos desarrollados</h4>
+
+                    <ul>
+                        <li>DepotLink POS Mobile</li>
+                        <li>PepsOCR</li>
+                        <li>Smart POS</li>
+                        <li>Taquería POS Android</li>
+                        <li>Taquería Yeshua POS</li>
+                        <li>Portafolio Profesional</li>
+                    </ul>
+
+                    <p>
+                        Cada proyecto fue desarrollado para resolver problemas reales,
+                        aprender nuevas tecnologías y fortalecer mi experiencia práctica.
+                    </p>
+
+                </div>
+                
+            </div>
+
+            <div class="timeline-item"
+                data-year="career"
+                onclick="toggleTimeline('career')">
+
+                <h3>2026</h3>
+
+                <p>
+                    Creación de GitHub, portafolio profesional y presencia
+                    digital como desarrollador.
+                </p>
+
+                <div class="timeline-details">
+
+                    <h4>Marca profesional</h4>
+
+                    <ul>
+                        <li>Git y GitHub</li>
+                        <li>Portafolio Web</li>
+                        <li>LinkedIn</li>
+                        <li>Documentación de proyectos</li>
+                        <li>CV profesional</li>
+                        <li>Presentación de soluciones</li>
+                    </ul>
+
+                    <p>
+                        Inicio de la construcción de una identidad profesional
+                        enfocada en desarrollo Android, automatización y soluciones digitales.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="education-section" id="formacion">
+
+        <div class="section-header">
+
+            <span class="section-tag">
+                FORMACIÓN
+            </span>
+
+            <h2 class="glow-title">
+                Formación y Bases Técnicas
+            </h2>
+
+            <p>
+                Formación técnica, aprendizaje continuo y desarrollo práctico
+                mediante proyectos reales.
+            </p>
+
+        </div>
+
+        <div class="education-grid">
+
+            <div class="education-card">
+
+            <h3>CEPCI</h3>
+
+            <p class="education-date">
+                Marzo 2010 - Septiembre 2011
+            </p>
+
+            <p>
+                Formación técnica concluida en informática, soporte técnico,
+                herramientas empresariales y diseño digital.
+            </p>
+
+            <ul class="education-list">
+
+                <li>Microsoft Word, Excel y PowerPoint</li>
+
+                <li>AutoCAD básico</li>
+
+                <li>Aspel COI y Aspel SAE</li>
+
+                <li>CorelDRAW y Adobe Photoshop</li>
+
+                <li>Instalación y configuración de software</li>
+
+                <li>Mantenimiento preventivo de hardware</li>
+
+                <li>Mantenimiento preventivo de software</li>
+
+                <li>Soporte técnico a usuarios</li>
+
+                <li>Administración básica de equipos de cómputo</li>
+
+            </ul>
+
+        </div>
+
+            <div class="education-card">
+
+            <h3>Tokio School</h3>
+
+            <p class="education-date">
+                2025 · Formación de 6 meses
+            </p>
+
+            <p>
+                Formación en programación Python y automatización de procesos,
+                complementada posteriormente mediante aprendizaje autodidacta
+                y desarrollo de proyectos propios.
+            </p>
+
+            <ul class="education-list">
+
+                <li>Fundamentos de programación</li>
+
+                <li>Python</li>
+
+                <li>Lógica de programación</li>
+
+                <li>Estructuras de control</li>
+
+                <li>Resolución de problemas</li>
+
+                <li>Automatización de procesos</li>
+
+            </ul>
+
+        </div>
+
+        </div>
+
+    </section>
+
+    <section class="contact-section" id="contacto">
+
+        <div class="section-header">
+
+            <span class="section-tag">CONTACTO</span>
+
+            <h2 class="glow-title">
+                Hablemos
+            </h2>
+
+            <p>
+                Estoy abierto a oportunidades laborales,
+                proyectos freelance y colaboraciones.
+            </p>
+
+        </div>
+
+        <div class="contact-grid">
+
+            <a href="#" class="contact-card" id="emailContact">
+
+                📧 Correo
+
+            </a>
+
+            <a href="https://github.com/emmdev410"
+            target="_blank"
+            class="contact-card">
+
+                💻 GitHub
+
+            </a>
+
+            <a href="https://linkedin.com/in/emmanuel-antonio-palma-solis-62638b412"
+            target="_blank"
+            class="contact-card">
+
+                🔗 LinkedIn
+
+            </a>
+
+            <a href="https://wa.me/529171077607"
+            target="_blank"
+            class="contact-card">
+
+                💬 WhatsApp
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+
+        <p>
+            © 2026 Emmanuel Palma Solís
+        </p>
+
+        <p>
+            Software Solutions Developer
+        </p>
+
+    </footer>
+    <script>
+
+    const sections = document.querySelectorAll("section[id]");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    window.addEventListener("scroll", () => {
+
+        let current = "";
+
+        sections.forEach(section => {
+
+            const sectionTop = section.offsetTop - 150;
+
+            if(window.scrollY >= sectionTop){
+                current = section.getAttribute("id");
+            }
+
+        });
+
+        navLinks.forEach(link => {
+
+            link.classList.remove("active");
+
+            if(link.getAttribute("href") === "#" + current){
+                link.classList.add("active");
+            }
+
+        });
+
+    });
+
+    </script>
+    <script>
+
+    const galleries = {
+
+        depotlink: [
+            "assets/projects/depotlink-pos/cover.png",
+            "assets/projects/depotlink-pos/1.jpg",
+            "assets/projects/depotlink-pos/2.jpeg",
+            "assets/projects/depotlink-pos/3.jpeg",
+            "assets/projects/depotlink-pos/4.jpeg",
+            "assets/projects/depotlink-pos/5.jpeg",
+            "assets/projects/depotlink-pos/7.jpeg"
+        ],
+
+        pepsocr: [
+            "assets/projects/pepsocr/cover.png",
+            "assets/projects/pepsocr/1.jpeg",
+            "assets/projects/pepsocr/2.jpeg",
+            "assets/projects/pepsocr/3.jpeg",
+            "assets/projects/pepsocr/4.jpeg",
+            "assets/projects/pepsocr/5.jpeg",
+            "assets/projects/pepsocr/6.jpeg",
+            "assets/projects/pepsocr/7.jpg",
+            "assets/projects/pepsocr/8.jpeg",
+            "assets/projects/pepsocr/9.jpeg",
+            "assets/projects/pepsocr/10.jpeg",
+            "assets/projects/pepsocr/11.jpeg"
+        ],
+
+        smartpos: [
+            "assets/projects/smart-pos/cover.png",
+            "assets/projects/smart-pos/1.jpeg",
+            "assets/projects/smart-pos/2.jpg",
+            "assets/projects/smart-pos/3.jpeg",
+            "assets/projects/smart-pos/4.jpeg",
+            "assets/projects/smart-pos/5.jpeg",
+            "assets/projects/smart-pos/6.jpeg",
+            "assets/projects/smart-pos/7.jpeg"
+        ],
+
+        taqueriapos: [
+            "assets/projects/taqueria-pos-android/cover.png",
+            "assets/projects/taqueria-pos-android/1.jpeg",
+            "assets/projects/taqueria-pos-android/2.jpeg",
+            "assets/projects/taqueria-pos-android/3.jpeg",
+            "assets/projects/taqueria-pos-android/4.jpeg"
+        ],
+
+        taqueriayeshua: [
+            "assets/projects/taqueria-yeshua/cover.png",
+            "assets/projects/taqueria-yeshua/1.jpeg",
+            "assets/projects/taqueria-yeshua/2.jpeg",
+            "assets/projects/taqueria-yeshua/3.jpeg",
+            "assets/projects/taqueria-yeshua/4.jpeg",
+            "assets/projects/taqueria-yeshua/5.jpeg",
+            "assets/projects/taqueria-yeshua/6.jpeg",
+            "assets/projects/taqueria-yeshua/7.jpeg",
+            "assets/projects/taqueria-yeshua/8.jpeg",
+            "assets/projects/taqueria-yeshua/9.jpeg",
+            "assets/projects/taqueria-yeshua/10.jpeg",
+            "assets/projects/taqueria-yeshua/11.jpeg",
+            "assets/projects/taqueria-yeshua/12.jpeg",
+            "assets/projects/taqueria-yeshua/13.jpeg"
+        ],
+
+        portfolio: [
+            "assets/projects/portafolio/cover.png",
+            "assets/projects/portafolio/1.png",
+            "assets/projects/portafolio/2.png",
+            "assets/projects/portafolio/3.png"
+        ]
+    };
+
+    document.querySelectorAll(".project-card").forEach(card => {
+
+        const galleryName = card.dataset.gallery;
+
+        if(!galleryName || !galleries[galleryName]) return;
+
+        const images = galleries[galleryName];
+
+        let current = 0;
+
+        const image = card.querySelector(".gallery-image");
+        const prev = card.querySelector(".prev");
+        const next = card.querySelector(".next");
+        const dots = card.querySelector(".gallery-dots");
+
+        function render(){
+
+            image.src = images[current];
+
+            if(dots){
+
+                dots.innerHTML = "";
+
+                images.forEach((_,index)=>{
+
+                    const dot = document.createElement("span");
+
+                    if(index === current){
+                        dot.classList.add("active");
+                    }
+
+                    dot.onclick = ()=>{
+
+                        current = index;
+                        render();
+
+                    };
+
+                    dots.appendChild(dot);
+
+                });
+
+            }
+
+        }
+
+        if(prev){
+
+            prev.onclick = ()=>{
+
+                current--;
+
+                if(current < 0){
+                    current = images.length - 1;
+                }
+
+                render();
+
+            };
+
+        }
+
+        if(next){
+
+            next.onclick = ()=>{
+
+                current++;
+
+                if(current >= images.length){
+                    current = 0;
+                }
+
+                render();
+
+            };
+
+        }
+
+        setInterval(()=>{
+
+            current++;
+
+            if(current >= images.length){
+                current = 0;
+            }
+
+            render();
+
+        },4000);
+
+        image.onclick = ()=>{
+
+            window.open(images[current], "_blank");
+
+        };
+
+        render();
+
+    });
+
+    </script>
+    <script>
+
+    document.getElementById("emailContact").addEventListener("click", function(e){
+
+        e.preventDefault();
+
+        window.location.href =
+            "mailto:emmanuel.solis159@gmail.com?subject=Contacto%20desde%20tu%20portafolio";
+
+        setTimeout(() => {
+
+            window.open(
+                "https://mail.google.com/mail/?view=cm&fs=1&to=emmanuel.solis159@gmail.com",
+                "_blank"
+            );
+
+        }, 1000);
+
+    });
+
+    </script>
+    <script>
+
+    function showTech(tech){
+
+        const title = document.getElementById("techTitle");
+        const desc = document.getElementById("techDescription");
+
+        const data = {
+
+            kotlin:{
+                title:"Kotlin",
+                desc:"Lenguaje moderno para Android desarrollado por JetBrains. Es mi lenguaje principal para construir aplicaciones Android como DepotLink POS, PepsOCR y SmartPOS."
+            },
+
+            android:{
+                title:"Android Studio",
+                desc:"Entorno oficial para desarrollar aplicaciones Android. Lo utilizo para diseñar interfaces, depurar errores y generar versiones instalables."
+            },
+
+            room:{
+                title:"Room Database",
+                desc:"Biblioteca de persistencia local de Android. Permite almacenar información sin conexión usando SQLite de forma más segura y organizada."
+            },
+
+            sqlite:{
+                title:"SQLite",
+                desc:"Motor de base de datos ligero integrado en Android. Lo utilizo para almacenar usuarios, ventas, productos e historial."
+            },
+
+            mvvm:{
+                title:"MVVM",
+                desc:"Arquitectura moderna que separa la interfaz, la lógica y los datos. Facilita mantener aplicaciones escalables y limpias."
+            },
+
+            python:{
+                title:"Python",
+                desc:"Lenguaje versátil utilizado para automatización de procesos, OCR, análisis de datos y desarrollo de herramientas."
+            },
+
+            flet:{
+                title:"Flet",
+                desc:"Framework que permite crear aplicaciones modernas usando Python con interfaces visuales multiplataforma."
+            },
+
+            opencv:{
+                title:"OpenCV",
+                desc:"Biblioteca de visión por computadora utilizada para procesamiento de imágenes y reconocimiento visual."
+            },
+
+            ocr:{
+                title:"OCR",
+                desc:"Tecnología de reconocimiento óptico de caracteres. Permite extraer texto automáticamente desde imágenes o documentos."
+            },
+
+            git:{
+                title:"Git",
+                desc:"Sistema de control de versiones utilizado para gestionar cambios y mantener historial de desarrollo."
+            },
+
+            github:{
+                title:"GitHub",
+                desc:"Plataforma para alojar repositorios Git, colaborar en proyectos y mantener versiones de código."
+            },
+
+            html:{
+                title:"HTML",
+                desc:"Lenguaje de marcado utilizado para construir la estructura de sitios web y aplicaciones web."
+            },
+
+            css:{
+                title:"CSS",
+                desc:"Lenguaje encargado del diseño visual, animaciones, estilos responsivos y experiencia de usuario."
+            }
+
+        };
+
+        title.textContent = data[tech].title;
+        desc.textContent = data[tech].desc;
+
+        document.getElementById("techDetails").scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+
+    }
+
+    </script>
+    <script>
+
+    function toggleService(type){
+
+        const cards =
+            document.querySelectorAll(".service-card");
+
+        cards.forEach(card=>{
+
+            if(card.getAttribute("data-type") !== type){
+                card.classList.remove("active");
+            }
+
+        });
+
+        const current =
+            document.querySelector(`[data-type="${type}"]`);
+
+        current.classList.toggle("active");
+
+    }
+
+    </script>
+    <script>
+
+    function toggleTimeline(id){
+
+        const items =
+            document.querySelectorAll(".timeline-item");
+
+        items.forEach(item=>{
+
+            if(item.dataset.year !== id){
+                item.classList.remove("active");
+            }
+
+        });
+
+        const current =
+            document.querySelector(`[data-year="${id}"]`);
+
+        current.classList.toggle("active");
+    }
+
+    </script>
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+        const navOptions = document.getElementById("navOptions");
+        const navbar = document.querySelector(".navbar");
+
+        navOptions.addEventListener("click", () => {
+
+            navbar.classList.toggle("open");
+
+            navOptions.textContent =
+                navbar.classList.contains("open")
+                ? "✕"
+                : "☰";
+        });
+
+        document.querySelectorAll(".nav-menu a").forEach(link => {
+
+            link.addEventListener("click", () => {
+
+                navbar.classList.remove("open");
+                navOptions.textContent = "☰";
+
+            });
+
+        });
+
+    });
+    </script>
+        <div id="logoModal" class="logo-modal">
+        <img src="assets//icons/logo-edev.png" alt="EDev">
+    </div>
+    <script>
+        const logo = document.getElementById("logoExpandible");
+        const modal = document.getElementById("logoModal");
+
+        logo.addEventListener("click", (e) => {
+            e.stopPropagation();
+            modal.classList.add("active");
+        });
+
+        modal.addEventListener("click", () => {
+            modal.classList.remove("active");
+        });
+        </script>
+        <script>
+
+        const reveals =
+        document.querySelectorAll(
+        '.service-card, .about-card, .about-left, .about-right, .tech-item, .project-card, .timeline-item, .education-card, .contact-card, .section-header'
+        );
+
+        const observer =
+        new IntersectionObserver(entries=>{
+
+            entries.forEach(entry=>{
+
+                if(entry.isIntersecting){
+                    entry.target.classList.add("show");
+                }
+
+            });
+ 
+        },{
+            threshold:0.15
+        });
+
+        reveals.forEach(item=>{
+
+            item.classList.add("reveal");
+            observer.observe(item);
+
+        });
+        </script>
 </body>
 </html>
