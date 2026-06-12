@@ -1799,24 +1799,28 @@ html{
     }
 
 }
+.footer {
+    padding: 40px;
+    text-align: center;
+    border-top: 1px solid rgba(163,255,18,.1);
+    color: #808080;
+}
+
 .footer-content{
     display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:20px;
-    flex-wrap:wrap;
-}
-.footer-content > div:first-child{
-    text-align:left;
-}
-
-.visitor-counter{
-    min-width:120px;
     justify-content:center;
+    align-items:center;
+    gap:16px;
+    flex-wrap:wrap;
+    text-align:center;
+}
+
+.footer-content > div:first-child{
+    text-align:center;
 }
 
 .visitor-counter{
-    display:flex;
+    display:inline-flex;
     align-items:center;
     gap:8px;
     padding:8px 14px;
@@ -1826,6 +1830,8 @@ html{
     color:#A3FF12;
     font-weight:700;
     font-size:.9rem;
+    min-width:120px;
+    justify-content:center;
 }
 
 .status-dot{
@@ -1856,7 +1862,7 @@ html{
 
     .footer-content{
         flex-direction:column;
-        gap:12px;
+        gap:10px;
     }
 
     .visitor-counter{
