@@ -1287,97 +1287,85 @@
         if(!galleryName || !galleries[galleryName]) return;
 
         const images = galleries[galleryName];
-
         let current = 0;
 
         const image = card.querySelector(".gallery-image");
         const prev = card.querySelector(".prev");
         const next = card.querySelector(".next");
         const dots = card.querySelector(".gallery-dots");
+        const projectImage = card.querySelector(".project-image");
 
-        function render(){
-
+        function render() {
             image.src = images[current];
 
-            if(dots){
-
+            if (dots) {
                 dots.innerHTML = "";
 
-                images.forEach((_,index)=>{
-
+                images.forEach((_, index) => {
                     const dot = document.createElement("span");
 
-                    if(index === current){
+                    if (index === current) {
                         dot.classList.add("active");
                     }
 
-                    dot.onclick = ()=>{
-
+                    dot.onclick = () => {
                         current = index;
                         render();
-
                     };
 
                     dots.appendChild(dot);
-
                 });
-
             }
-
         }
 
-        if(prev){
-
-            prev.onclick = ()=>{
-
-                current--;
-
-                if(current < 0){
-                    current = images.length - 1;
-                }
-
-                render();
-
-            };
-
-        }
-
-        if(next){
-
-            next.onclick = ()=>{
-
-                current++;
-
-                if(current >= images.length){
-                    current = 0;
-                }
-
-                render();
-
-            };
-
-        }
-
-        setInterval(()=>{
-
-            current++;
-
-            if(current >= images.length){
-                current = 0;
-            }
-
+        function showPrev() {
+            current--;
+            if (current < 0) current = images.length - 1;
             render();
+        }
 
-        },4000);
+        function showNext() {
+            current++;
+            if (current >= images.length) current = 0;
+            render();
+        }
 
-        image.onclick = ()=>{
+        if (prev) prev.onclick = showPrev;
+        if (next) next.onclick = showNext;
 
+        let startX = 0;
+        const isTouchDevice = window.matchMedia("(pointer: coarse)").matches;
+
+        if (isTouchDevice && projectImage) {
+            projectImage.addEventListener("touchstart", (e) => {
+                startX = e.changedTouches[0].clientX;
+            }, { passive: true });
+
+            projectImage.addEventListener("touchend", (e) => {
+                const endX = e.changedTouches[0].clientX;
+                const diff = endX - startX;
+
+                if (Math.abs(diff) < 50) return;
+
+                if (diff < 0) {
+                    showNext();
+                } else {
+                    showPrev();
+                }
+            }, { passive: true });
+        }
+
+        setInterval(() => {
+            current++;
+            if (current >= images.length) current = 0;
+            render();
+        }, 4000);
+
+        image.onclick = () => {
             window.open(images[current], "_blank");
-
         };
 
         render();
-
     });
 
     </script>
@@ -1608,16 +1596,27 @@
 
         });
     </script>
+
     <script>
-    fetch('https://api.visitorbadge.io/api/visitors?path=emmdev410.github.io/portfolio-emmanuel')
-    .then(res => res.json())
-    .then(data => {
-        document.getElementById('visit-count').textContent =
-            data.total || '0';
-    })
-    .catch(() => {
-        document.getElementById('visit-count').textContent = '0';
-    });
+    async function loadVisits() {
+        try {
+            const response = await fetch(
+                "https://portfolio-counter.emmanuel-solis159.workers.dev"
+            );
+
+            const data = await response.json();
+
+            document.getElementById("visit-count").textContent =
+                data.visits.toLocaleString();
+
+        } catch (error) {
+            console.error(error);
+            document.getElementById("visit-count").textContent = "--";
+        }
+    }
+
+    loadVisits();
     </script>
+    
 </body>
 </html>

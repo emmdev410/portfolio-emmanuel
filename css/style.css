@@ -835,14 +835,6 @@ body::before {
     border-color: var(--green);
     transform: translateY(-8px);
 }
-
-.footer {
-    padding: 40px;
-    text-align: center;
-    border-top: 1px solid rgba(163,255,18,.1);
-    color: #808080;
-}
-
 .hero-stats {
     margin-top: 34px;
     display: grid;
@@ -1582,24 +1574,6 @@ body::before {
     justify-content:center;
 }
 
-.logo img{
-    height:42px;
-    width:auto;
-    filter:
-        drop-shadow(0 0 8px rgba(145,255,0,.5))
-        drop-shadow(0 0 16px rgba(145,255,0,.25));
-}
-.logo img{
-    height:42px;
-    width:auto;
-    cursor:pointer;
-    transition:.3s;
-}
-
-.logo img:hover{
-    transform:scale(1.05);
-}
-
 .logo-modal{
     position:fixed;
     inset:0;
@@ -1625,19 +1599,6 @@ body::before {
     pointer-events:auto;
 }
 
-.logo-modal img{
-    width:min(80vw,500px);
-    max-height:80vh;
-    object-fit:contain;
-
-    transform:scale(.7);
-    transition:.3s;
-
-    filter:
-        drop-shadow(0 0 20px #9dff00)
-        drop-shadow(0 0 50px #7dff00);
-}
-
 .logo-modal.active img{
     transform:scale(1);
 }
@@ -1659,14 +1620,6 @@ body::before {
     width:min(90vw,700px);
     max-height:90vh;
     object-fit:contain;
-}
-.stretch-effect{
-    transition: transform 0.15s ease-out;
-    will-change: transform;
-}
-.stretch-effect{
-    transition: transform .18s ease-out;
-    will-change: transform;
 }
 .stretch-effect{
     opacity:0;
@@ -1870,19 +1823,58 @@ html{
     }
 
 }
-@media (max-width:768px){
-
-    .footer-content{
-        flex-direction:column;
-        text-align:center;
+@media (max-width: 768px) {
+    .project-image{
+        position: relative;
+        padding: 0 56px;
+        touch-action: pan-y;
     }
 
-    .footer-content > div:first-child{
-        text-align:center;
+    .gallery-arrow{
+        top: 50%;
+        transform: translateY(-50%);
+        width: 42px;
+        height: 42px;
+        font-size: 24px;
+        background: rgba(0,0,0,.72);
+        border: 1px solid rgba(163,255,18,.22);
+        box-shadow: 0 0 16px rgba(163,255,18,.18);
+        z-index: 60;
     }
 
-    .visitor-counter{
-        margin-top:10px;
+    .prev{
+        left: 10px;
     }
 
+    .next{
+        right: 10px;
+    }
+
+    .project-image img,
+    .project-media{
+        width: 100%;
+        height: auto;
+        max-height: 420px;
+        object-fit: contain;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-image{
+        padding: 0 48px;
+    }
+
+    .gallery-arrow{
+        width: 38px;
+        height: 38px;
+        font-size: 22px;
+    }
+
+    .prev{
+        left: 8px;
+    }
+
+    .next{
+        right: 8px;
+    }
 }
