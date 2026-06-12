@@ -1801,10 +1801,18 @@ html{
 }
 .footer-content{
     display:flex;
-    justify-content:center;
+    justify-content:space-between;
     align-items:center;
     gap:20px;
     flex-wrap:wrap;
+}
+.footer-content > div:first-child{
+    text-align:left;
+}
+
+.visitor-counter{
+    min-width:120px;
+    justify-content:center;
 }
 
 .visitor-counter{
@@ -1853,6 +1861,22 @@ html{
 
     .visitor-counter{
         font-size:.85rem;
+    }
+
+}
+@media (max-width:768px){
+
+    .footer-content{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .footer-content > div:first-child{
+        text-align:center;
+    }
+
+    .visitor-counter{
+        margin-top:10px;
     }
 
 }
