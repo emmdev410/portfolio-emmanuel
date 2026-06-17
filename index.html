@@ -2506,13 +2506,14 @@
     <script>
     document.addEventListener("DOMContentLoaded", () => {
         const revealItems = document.querySelectorAll(
-            ".service-card, .about-card, .about-left, .about-right, .tech-item, .project-card, .timeline-item, .education-card, .contact-card, .section-header"
+            ".service-card, .about-card, .about-left, .about-right, .project-card, .timeline-item, .education-card, .contact-card, .section-header"
         );
 
         const revealObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add("show");
+                    revealObserver.unobserve(entry.target);
                 }
             });
         }, {
@@ -2544,7 +2545,31 @@
     </div>
     <script>
     const navOptions =
+        
         document.getElementById("navOptions");
+        let lastScroll = 0;
+
+        window.addEventListener("scroll", () => {
+
+            const currentScroll = window.scrollY;
+
+            if(
+                currentScroll > lastScroll &&
+                currentScroll > 120
+            ){
+
+                navbar.style.transform =
+                    "translateY(-100%)";
+
+            }else{
+
+                navbar.style.transform =
+                    "translateY(0)";
+            }
+
+            lastScroll = currentScroll;
+
+        });
 
     const navbar =
         document.querySelector(".navbar");
