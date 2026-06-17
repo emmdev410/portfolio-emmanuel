@@ -15,7 +15,14 @@
     <meta name="description" content="Portafolio profesional de Emmanuel Palma Solís, desarrollador Android, automatización y soluciones digitales.">
 
     <meta name="keywords" content="Android, Kotlin, SQLite, Room, MVVM, Python, OCR, Portafolio, Desarrollador">
+    <meta property="og:title" content="Emmanuel Palma Solís | Portafolio">
+    <meta property="og:description">
+    <meta property="og:image">
+    <meta property="og:url">
 
+    <meta name="twitter:card">
+    <meta name="twitter:title">
+    <meta name="twitter:description">
     <meta name="author" content="Emmanuel Palma Solís">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,15 +34,63 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="background-system">
+        <div class="data-line line1"></div>
+        <div class="data-line line2"></div>
+        <div class="data-line line3"></div>
+        <div class="data-line line4"></div>
+
+        <div class="bg-orb orb-1"></div>
+        <div class="bg-orb orb-2"></div>
+        <div class="bg-orb orb-3"></div>
+
+        <div class="bg-grid"></div>
+
+        <div class="bg-particles">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </div>
 
     <nav class="navbar">
+        <div class="logo-container">
+
+        <div class="logo-halo"></div>
+
+        <div class="logo-particles">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
         <div class="logo">
             <img
-                src="assets//icons/logo-edev.png"
+                src="assets/icons/logo-edev.png"
                 alt="EDev"
                 id="logoExpandible"
             >
+            <div class="logo-shine"></div>
         </div>
+
+    </div>
         <a href="#inicio" class="nav-center-title">
             EDev
         </a>
@@ -85,11 +140,11 @@
         </div>
     </nav>
 
-    <section class="hero" id="inicio">
+    <section class="hero" id="inicio" data-theme="green">
 
         <div class="hero-content">
 
-            <p class="hero-tag stretch-effect">DESARROLLADOR DE SOFTWARE</p>
+            <p class="hero-tag stretch-effect">DESARROLLADOR ANDROID · WEB · CLOUD · AUTOMATIZACIÓN</p>
 
             <p class="hero-quote stretch-effect">
                 Transformando esfuerzo constante en soluciones reales.
@@ -101,8 +156,8 @@
             </h1>
 
             <p class="hero-description stretch-effect">
-                Desarrollo aplicaciones web modernas, funcionales y optimizadas
-                para brindar experiencias claras, rápidas y profesionales.
+                Desarrollador autodidacta enfocado en Android, desarrollo web y automatización. 
+                Aprendo construyendo proyectos reales que combinan software, productividad y soluciones digitales.
             </p>
 
             <div class="hero-buttons">
@@ -131,21 +186,21 @@
                 </div>
 
                 <div class="orbit-slot slot-right">
-                    <div class="dedication"><span>Páginas Web</span></div>
+                    <div class="dedication"><span>Web</span></div>
                 </div>
 
                 <div class="orbit-slot slot-bottom">
-                    <div class="dedication"><span>Automatización</span></div>
+                    <div class="dedication"><span>Serverless</span></div>
                 </div>
 
                 <div class="orbit-slot slot-left">
-                    <div class="dedication"><span>Soluciones</span></div>
+                    <div class="dedication"><span>OCR</span></div>
                 </div>
             </div>
 
             <div class="orbit orbit-2">
                 <div class="orbit-slot slot-top-right">
-                    <div class="dedication"><span>Responsable</span></div>
+                    <div class="dedication"><span>Resolutivo</span></div>
                 </div>
 
                 <div class="orbit-slot slot-bottom-right">
@@ -153,23 +208,27 @@
                 </div>
 
                 <div class="orbit-slot slot-bottom-left">
-                    <div class="dedication"><span>Adicto a programar</span></div>
+                    <div class="dedication"><span>Aprendizaje Constante</span></div>
                 </div>
 
                 <div class="orbit-slot slot-top-left">
-                    <div class="dedication"><span>Resolutivo</span></div>
+                    <div class="dedication"><span>Innovación</span></div>
                 </div>
             </div>
 
             <div class="hero-image-ring"></div>
 
-            <img src="assets/images/profile.jpg" alt="Emmanuel Palma Solís">
+            <img 
+                src="assets/images/profile.jpg" 
+                alt="Emmanuel Palma Solís"
+                loading="lazy"
+                decoding="async"
+            >
         </div>
     </section>
 
 
-    <section class="services" id="soluciones">
-
+    <section class="services" id="soluciones" data-theme="purple">
 
             <div class="section-header reveal">
 
@@ -359,7 +418,7 @@
 
     </section>
 
-    <section class="about-section" id="sobre-mi">
+    <section class="about-section" id="sobre-mi" data-theme="green">
 
         <div class="about-left reveal">
 
@@ -382,8 +441,12 @@
             </p>
 
             <p>
-                Me adapto rápidamente a nuevas tecnologías y disfruto aprender
-                herramientas que permitan construir soluciones más eficientes.
+                Recientemente he trabajado con Cloudflare Workers,
+                APIs REST, automatización de procesos,
+                integración de servicios externos,
+                sistemas de monitoreo y arquitecturas serverless.
+                Mi enfoque sigue siendo aprender construyendo
+                proyectos reales que resuelvan necesidades concretas.
             </p>
 
         </div>
@@ -391,13 +454,13 @@
         <div class="about-right reveal">
 
             <div class="about-card">
-                <h3>6+</h3>
+                <h3>7+</h3>
                 <p>Proyectos desarrollados</p>
             </div>
 
             <div class="about-card">
-                <h3>2026</h3>
-                <p>Inicio de proyectos de software</p>
+                <h3>20+</h3>
+                <p>Tecnologías utilizadas</p>
             </div>
 
             <div class="about-card">
@@ -406,14 +469,14 @@
             </div>
 
             <div class="about-card">
-                <h3>CEPCI</h3>
-                <p>Base técnica en informática</p>
+                <h3>100%</h3>
+                <p>Aprendizaje autodidacta</p>
             </div>
 
         </div>
 
     </section>
-    <section class="tech-section" id="tecnologias">
+    <section class="tech-section" id="tecnologias" data-theme="green">
 
         <div class="section-header">
             <span class="section-tag">STACK</span>
@@ -430,33 +493,37 @@
 
         <div class="tech-grid">
 
-            <div class="tech-item stretch-effect" onclick="showTech('kotlin')">Kotlin</div>
-            <div class="tech-item stretch-effect" onclick="showTech('android')">Android Studio</div>
-            <div class="tech-item stretch-effect" onclick="showTech('room')">Room</div>
-            <div class="tech-item stretch-effect" onclick="showTech('sqlite')">SQLite</div>
-            <div class="tech-item stretch-effect" onclick="showTech('mvvm')">MVVM</div>
-            <div class="tech-item stretch-effect" onclick="showTech('python')">Python</div>
-            <div class="tech-item stretch-effect" onclick="showTech('flet')">Flet</div>
-            <div class="tech-item stretch-effect" onclick="showTech('opencv')">OpenCV</div>
-            <div class="tech-item stretch-effect" onclick="showTech('ocr')">OCR</div>
-            <div class="tech-item stretch-effect" onclick="showTech('git')">Git</div>
-            <div class="tech-item stretch-effect" onclick="showTech('github')">GitHub</div>
-            <div class="tech-item stretch-effect" onclick="showTech('html')">HTML</div>
-            <div class="tech-item stretch-effect" onclick="showTech('css')">CSS</div>
+            <div class="tech-item stretch-effect" onclick="openTechModal('kotlin')">Kotlin</div>
+            <div class="tech-item stretch-effect" onclick="openTechModal('android')">Android Studio</div>
+            <div class="tech-item stretch-effect" onclick="openTechModal('room')">Room</div>
+            <div class="tech-item stretch-effect" onclick="openTechModal('sqlite')">SQLite</div>
+            <div class="tech-item stretch-effect" onclick="openTechModal('mvvm')">MVVM</div>
+            <div class="tech-item stretch-effect" onclick="openTechModal('python')">Python</div>
+            <div class="tech-item stretch-effect" onclick="openTechModal('flet')">Flet</div>
+            <div class="tech-item stretch-effect" onclick="openTechModal('opencv')">OpenCV</div>
+            <div class="tech-item stretch-effect" onclick="openTechModal('ocr')">OCR</div>
+            <div class="tech-item stretch-effect" onclick="openTechModal('git')">Git</div>
+            <div class="tech-item stretch-effect" onclick="openTechModal('github')">GitHub</div>
+            <div class="tech-item stretch-effect" onclick="openTechModal('html')">HTML</div>
+            <div class="tech-item stretch-effect" onclick="openTechModal('css')">CSS</div>
+            <div class="tech-item stretch-effect" onclick="openTechModal('firebase')">Firebase</div>
+            <div class="tech-item stretch-effect" onclick="openTechModal('mlkit')">ML Kit</div>
 
-        </div>
-        <div class="tech-details" id="techDetails">
+            <div class="tech-item stretch-effect" onclick="openTechModal('restapi')">REST API</div>
+            <div class="tech-item stretch-effect" onclick="openTechModal('json')">JSON</div>
+            <div class="tech-item stretch-effect" onclick="openTechModal('fetch')">Fetch API</div>
 
-            <h3 id="techTitle">Selecciona una tecnología</h3>
+            <div class="tech-item stretch-effect" onclick="openTechModal('workers')">Cloudflare Workers</div>
+            <div class="tech-item stretch-effect" onclick="openTechModal('kv')">Cloudflare KV</div>
+            <div class="tech-item stretch-effect" onclick="openTechModal('cron')">Cron Triggers</div>
 
-            <p id="techDescription">
-                Haz clic sobre cualquier tecnología para ver información detallada.
-            </p>
+            <div class="tech-item stretch-effect" onclick="openTechModal('telegram')">Telegram Bot API</div>
+            <div class="tech-item stretch-effect" onclick="openTechModal('vision')">Computer Vision</div>
 
         </div>
 
     </section>
-    <section id="proyectos" class="projects-section">
+    <section id="proyectos" class="projects-section" data-theme="purple">
 
             <div class="section-header">
                 <span class="section-tag">PORTAFOLIO</span>
@@ -482,6 +549,8 @@
                         src="assets/projects/depotlink-pos/cover.png"
                         alt="DepotLink POS Mobile"
                         class="project-media gallery-image"
+                        loading="lazy"
+                        decoding="async"
                     >
 
                     <button class="gallery-arrow next">❯</button>
@@ -541,6 +610,8 @@
                         src="assets/projects/taqueria-yeshua/cover.png"
                         alt="Taquería Yeshua POS"
                         class="project-media gallery-image"
+                        loading="lazy"
+                        decoding="async"
                     >
 
                     <button class="gallery-arrow next">❯</button>
@@ -597,6 +668,8 @@
                         src="assets/projects/pepsocr/cover.png"
                         alt="PepsOCR"
                         class="project-media gallery-image"
+                        loading="lazy"
+                        decoding="async"
                     >
 
                     <button class="gallery-arrow next">❯</button>
@@ -660,6 +733,8 @@
                         src="assets/projects/smart-pos/cover.png"
                         alt="Smart POS"
                         class="project-media gallery-image"
+                        loading="lazy"
+                        decoding="async"
                     >
 
                     <button class="gallery-arrow next">❯</button>
@@ -719,6 +794,8 @@
                         src="assets/projects/taqueria-pos-android/cover.png"
                         alt="Taquería POS Android"
                         class="project-media gallery-image"
+                        loading="lazy"
+                        decoding="async"
                     >
 
                     <button class="gallery-arrow next">❯</button>
@@ -780,6 +857,8 @@
                         src="assets/projects/portafolio/cover.png"
                         alt="Portafolio Profesional"
                         class="project-media gallery-image"
+                        loading="lazy"
+                        decoding="async"
                     >
 
                     <button class="gallery-arrow next">❯</button>
@@ -823,12 +902,77 @@
                     </div>
 
                 </div>
-
+            
             </div>
+
+                <!-- PROYECTO 07 -->
+
+                <div class="project-card" data-gallery="analytics">
+
+                    <div class="project-image">
+
+                        <button class="gallery-arrow prev">❮</button>
+
+                        <img
+                            src="assets/projects/analytics/cover.png"
+                            alt="EDEV Analytics"
+                            class="project-media gallery-image"
+                            loading="lazy"
+                            decoding="async"
+                        >
+
+                        <button class="gallery-arrow next">❯</button>
+
+                        <div class="gallery-dots"></div>
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-number">07</span>
+
+                        <h3>EDEV Analytics</h3>
+
+                        <div class="tech-stack">
+                            <span>Cloudflare Workers</span>
+                            <span>Cloudflare KV</span>
+                            <span>Cron Triggers</span>
+                            <span>Telegram Bot API</span>
+                            <span>JavaScript</span>
+                            <span>REST API</span>
+                        </div>
+
+                        <p>
+                            Sistema de analítica y monitoreo desarrollado para mi portafolio profesional.
+                            Diseñado para demostrar conocimientos en backend, automatización,
+                            observabilidad y arquitectura serverless.
+                        </p>
+
+                        <ul>
+                            <li>✓ Conteo de visitas en tiempo real</li>
+                            <li>✓ Persistencia mediante Cloudflare KV</li>
+                            <li>✓ Reportes automáticos por Telegram</li>
+                            <li>✓ Automatización mediante Cron Jobs</li>
+                            <li>✓ Arquitectura Serverless</li>
+                            <li>✓ Monitoreo 24/7</li>
+                            <li>✓ Integración de APIs externas</li>
+                        </ul>
+
+                        <div class="project-buttons">
+
+                            <a href="#" class="btn-primary">
+                                Ver Proyecto
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
 
         </section>
 
-    <section class="trayectoria-section" id="trayectoria">
+    <section class="trayectoria-section" id="trayectoria" data-theme="green">
 
         <span class="section-tag">
             TRAYECTORIA
@@ -960,6 +1104,7 @@
                         <li>Taquería POS Android</li>
                         <li>Taquería Yeshua POS</li>
                         <li>Portafolio Profesional</li>
+                        <li>EDEV Analytics</li>
                     </ul>
 
                     <p>
@@ -1008,7 +1153,7 @@
 
     </section>
 
-    <section class="education-section" id="formacion">
+    <section class="education-section" id="formacion" data-theme="green">
 
         <div class="section-header">
 
@@ -1102,7 +1247,7 @@
 
     </section>
 
-    <section class="contact-section" id="contacto">
+    <section class="contact-section" id="contacto" data-theme="purple">
 
         <div class="section-header">
 
@@ -1155,6 +1300,8 @@
 
     </section>
 
+    
+
     <footer class="footer">
 
         <div class="footer-content">
@@ -1175,38 +1322,132 @@
         </div>
 
     </footer>
+
+    <div id="projectModal" class="project-modal" aria-hidden="true">
+        <div class="project-modal-card">
+            <button type="button" class="project-modal-close" id="projectModalClose" aria-label="Cerrar proyecto">
+                ✕
+            </button>
+
+            <button type="button" class="project-modal-arrow prev" id="projectModalPrev" aria-label="Imagen anterior">
+                ❮
+            </button>
+
+            <img
+                id="projectModalImage"
+                src=""
+                alt="Vista ampliada del proyecto"
+                class="project-modal-image"
+            >
+
+            <button type="button" class="project-modal-arrow next" id="projectModalNext" aria-label="Imagen siguiente">
+                ❯
+            </button>
+
+            <div class="project-modal-dots" id="projectModalDots"></div>
+        </div>
+    </div>
+    
     <script>
+    document.addEventListener("DOMContentLoaded", () => {
 
-    const sections = document.querySelectorAll("section[id]");
-    const navLinks = document.querySelectorAll(".nav-link");
+        const sections = document.querySelectorAll("section[data-theme]");
+        const navLinks = document.querySelectorAll(".nav-link");
 
-    window.addEventListener("scroll", () => {
+        const sectionTheme = {
+            inicio: "green",
+            soluciones: "purple",
+            "sobre-mi": "green",
+            tecnologias: "green",
+            proyectos: "purple",
+            trayectoria: "green",
+            formacion: "green",
+            contacto: "purple"
+        };
 
-        let current = "";
+        function setTheme(sectionId) {
 
-        sections.forEach(section => {
+            document.body.dataset.theme =
+                sectionTheme[sectionId] || "green";
+                const logo =
+                    document.getElementById("logoExpandible");
 
-            const sectionTop = section.offsetTop - 150;
+                if(logo){
 
-            if(window.scrollY >= sectionTop){
-                current = section.getAttribute("id");
-            }
+                    logo.classList.remove(
+                        "logo-green",
+                        "logo-purple"
+                    );
 
-        });
+                    if(
+                        sectionTheme[sectionId] === "purple"
+                    ){
 
-        navLinks.forEach(link => {
+                        logo.classList.add(
+                            "logo-purple"
+                        );
 
-            link.classList.remove("active");
+                    }else{
 
-            if(link.getAttribute("href") === "#" + current){
-                link.classList.add("active");
-            }
+                        logo.classList.add(
+                            "logo-green"
+                        );
 
-        });
+                    }
+
+                }
+
+            navLinks.forEach(link => {
+
+                link.classList.toggle(
+                    "active",
+                    link.getAttribute("href") === "#" + sectionId
+                );
+
+            });
+
+        }
+
+        /*
+            Detecta la sección visible
+            y actualiza el menú y tema.
+        */
+        function updateActiveSection() {
+
+            let currentSection = "inicio";
+
+            sections.forEach(section => {
+
+                const top = section.offsetTop - 180;
+                const bottom = top + section.offsetHeight;
+
+                if (
+                    window.scrollY >= top &&
+                    window.scrollY < bottom
+                ) {
+                    currentSection = section.id;
+                }
+
+            });
+
+            setTheme(currentSection);
+        }
+
+        window.addEventListener(
+            "scroll",
+            updateActiveSection
+        );
+
+        window.addEventListener(
+            "load",
+            updateActiveSection
+        );
+
+        updateActiveSection();
 
     });
-
     </script>
+
     <script>
 
     const galleries = {
@@ -1277,42 +1518,190 @@
             "assets/projects/portafolio/1.png",
             "assets/projects/portafolio/2.png",
             "assets/projects/portafolio/3.png"
-        ]
+        ],
+        analytics:[
+            "assets/projects/analytics/cover.png",
+            "assets/projects/analytics/1.jpeg",
+            "assets/projects/analytics/2.jpeg",
+            "assets/projects/analytics/3.jpeg"
+        ],
     };
 
+    let activeProjectGallery = null;
+    let activeProjectIndex = 0;
+
+    let projectModal;
+    let projectModalImage;
+    let projectModalDots;
+    let projectModalClose;
+    let projectModalPrev;
+    let projectModalNext;
+
+    document.addEventListener("DOMContentLoaded", () => {
+
+        projectModal = document.getElementById("projectModal");
+        projectModalImage = document.getElementById("projectModalImage");
+        projectModalDots = document.getElementById("projectModalDots");
+        projectModalClose = document.getElementById("projectModalClose");
+        projectModalPrev = document.getElementById("projectModalPrev");
+        projectModalNext = document.getElementById("projectModalNext");
+
+        projectModalClose.addEventListener("click", closeProjectModal);
+
+        projectModalPrev.addEventListener("click", showProjectPrev);
+
+        projectModalNext.addEventListener("click", showProjectNext);
+
+        let projectTouchStartX = 0;
+
+        projectModalImage.addEventListener("touchstart", (e) => {
+            projectTouchStartX = e.changedTouches[0].clientX;
+        }, { passive: true });
+
+        projectModalImage.addEventListener("touchend", (e) => {
+            const projectTouchEndX = e.changedTouches[0].clientX;
+            const diff = projectTouchStartX - projectTouchEndX;
+
+            if (Math.abs(diff) < 50) return;
+
+            if (diff > 0) {
+                showProjectNext();
+            } else {
+                showProjectPrev();
+            }
+        }, { passive: true });
+
+        projectModal.addEventListener("touchend", (e) => {
+
+            const endX =
+                e.changedTouches[0].clientX;
+
+            const diff =
+                modalStartX - endX;
+
+            if(Math.abs(diff) < 50)
+                return;
+
+            if(diff > 0){
+
+                showProjectNext();
+
+            }else{
+
+                showProjectPrev();
+
+            }
+
+        }, { passive:true });
+
+        projectModal.addEventListener("click", (e) => {
+
+            if (e.target === projectModal) {
+                closeProjectModal();
+            }
+
+        });
+
+        document.addEventListener("keydown", (e) => {
+
+            if (!projectModal.classList.contains("active")) return;
+
+            if (e.key === "Escape") closeProjectModal();
+
+            if (e.key === "ArrowLeft") showProjectPrev();
+
+            if (e.key === "ArrowRight") showProjectNext();
+
+        });
+
+    });
+
+    function renderProjectModal() {
+        if (!activeProjectGallery) return;
+
+        const images = galleries[activeProjectGallery];
+        if (!images || !images.length) return;
+
+        projectModalImage.src = images[activeProjectIndex];
+
+        projectModalDots.innerHTML = "";
+        images.forEach((_, index) => {
+            const dot = document.createElement("button");
+            dot.type = "button";
+
+            if (index === activeProjectIndex) {
+                dot.classList.add("active");
+            }
+
+            dot.addEventListener("click", () => {
+                activeProjectIndex = index;
+                renderProjectModal();
+            });
+
+            projectModalDots.appendChild(dot);
+        });
+    }
+
+    function openProjectModal(galleryName, index) {
+        activeProjectGallery = galleryName;
+        activeProjectIndex = index;
+
+        renderProjectModal();
+        projectModal.classList.add("active");
+        projectModal.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+    }
+
+    function closeProjectModal() {
+        projectModal.classList.remove("active");
+        projectModal.setAttribute("aria-hidden", "true");
+        document.body.style.overflow = "";
+    }
+
+    function showProjectPrev() {
+        const images = galleries[activeProjectGallery];
+        if (!images || !images.length) return;
+
+        activeProjectIndex--;
+        if (activeProjectIndex < 0) activeProjectIndex = images.length - 1;
+        renderProjectModal();
+    }
+
+    function showProjectNext() {
+        const images = galleries[activeProjectGallery];
+        if (!images || !images.length) return;
+
+        activeProjectIndex++;
+        if (activeProjectIndex >= images.length) activeProjectIndex = 0;
+        renderProjectModal();
+    }
     document.querySelectorAll(".project-card").forEach(card => {
 
         const galleryName = card.dataset.gallery;
-
-        if(!galleryName || !galleries[galleryName]) return;
+        if (!galleryName || !galleries[galleryName]) return;
 
         const images = galleries[galleryName];
         let current = 0;
+        let ignoreClick = false;
 
         const image = card.querySelector(".gallery-image");
         const prev = card.querySelector(".prev");
         const next = card.querySelector(".next");
         const dots = card.querySelector(".gallery-dots");
-        const projectImage = card.querySelector(".project-image");
 
         function render() {
             image.src = images[current];
 
             if (dots) {
                 dots.innerHTML = "";
-
                 images.forEach((_, index) => {
                     const dot = document.createElement("span");
-
-                    if (index === current) {
-                        dot.classList.add("active");
-                    }
-
-                    dot.onclick = () => {
+                    if (index === current) dot.classList.add("active");
+                    dot.addEventListener("click", (e) => {
+                        e.stopPropagation();
                         current = index;
                         render();
-                    };
-
+                    });
                     dots.appendChild(dot);
                 });
             }
@@ -1330,40 +1719,25 @@
             render();
         }
 
-        if (prev) prev.onclick = showPrev;
-        if (next) next.onclick = showNext;
+        if (prev) prev.addEventListener("click", (e) => {
+            e.stopPropagation();
+            showPrev();
+        });
 
-        let startX = 0;
-        const isTouchDevice = window.matchMedia("(pointer: coarse)").matches;
+        if (next) next.addEventListener("click", (e) => {
+            e.stopPropagation();
+            showNext();
+        });
 
-        if (isTouchDevice && projectImage) {
-            projectImage.addEventListener("touchstart", (e) => {
-                startX = e.changedTouches[0].clientX;
-            }, { passive: true });
-
-            projectImage.addEventListener("touchend", (e) => {
-                const endX = e.changedTouches[0].clientX;
-                const diff = endX - startX;
-
-                if (Math.abs(diff) < 50) return;
-
-                if (diff < 0) {
-                    showNext();
-                } else {
-                    showPrev();
-                }
-            }, { passive: true });
-        }
-
-        setInterval(() => {
-            current++;
-            if (current >= images.length) current = 0;
-            render();
-        }, 4000);
-
-        image.onclick = () => {
-            window.open(images[current], "_blank");
-        };
+        card.addEventListener("click", (e) => {
+            if (ignoreClick) return;
+            if (e.target.closest(".prev")) return;
+            if (e.target.closest(".next")) return;
+            if (e.target.closest(".gallery-dots")) return;
+            if (e.target.closest(".gallery-image")) {
+                openProjectModal(galleryName, current);
+            }
+        });
 
         render();
     });
@@ -1392,93 +1766,615 @@
     </script>
     <script>
 
-    function showTech(tech){
+    /*
+        Muestra información detallada
+        de la tecnología seleccionada.
+    */
+    const techInfo = {
 
-        const title = document.getElementById("techTitle");
-        const desc = document.getElementById("techDescription");
+        kotlin:{
+            title:"Kotlin",
+            content:`
+                <h4>¿Qué es?</h4>
+                <p>
+                    Lenguaje moderno desarrollado por JetBrains y adoptado oficialmente por Google para Android.
+                    Combina seguridad, claridad y productividad.
+                </p>
 
-        const data = {
+                <h4>¿Dónde lo utilizo?</h4>
+                <p>
+                    Es mi tecnología principal para crear aplicaciones Android nativas con arquitectura moderna,
+                    pantallas limpias y lógica mantenible.
+                </p>
 
-            kotlin:{
-                title:"Kotlin",
-                desc:"Lenguaje moderno para Android desarrollado por JetBrains. Es mi lenguaje principal para construir aplicaciones Android como DepotLink POS, PepsOCR y SmartPOS."
-            },
+                <h4>Proyectos relacionados</h4>
+                <ul>
+                    <li>DepotLink POS Mobile</li>
+                    <li>PepsOCR</li>
+                    <li>Taquería POS Android</li>
+                </ul>
+            `
+        },
 
-            android:{
-                title:"Android Studio",
-                desc:"Entorno oficial para desarrollar aplicaciones Android. Lo utilizo para diseñar interfaces, depurar errores y generar versiones instalables."
-            },
+        android:{
+            title:"Android Studio",
+            content:`
+                <h4>¿Qué es?</h4>
+                <p>
+                    Entorno oficial de desarrollo para aplicaciones Android. Permite diseñar interfaces, depurar,
+                    probar y generar versiones instalables.
+                </p>
 
-            room:{
-                title:"Room Database",
-                desc:"Biblioteca de persistencia local de Android. Permite almacenar información sin conexión usando SQLite de forma más segura y organizada."
-            },
+                <h4>¿Dónde lo utilizo?</h4>
+                <p>
+                    Lo uso para construir aplicaciones Android desde cero, organizar pantallas, revisar errores y
+                    preparar APKs listas para pruebas.
+                </p>
 
-            sqlite:{
-                title:"SQLite",
-                desc:"Motor de base de datos ligero integrado en Android. Lo utilizo para almacenar usuarios, ventas, productos e historial."
-            },
+                <h4>Proyectos relacionados</h4>
+                <ul>
+                    <li>DepotLink POS Mobile</li>
+                    <li>PepsOCR</li>
+                    <li>Taquería POS Android</li>
+                </ul>
+            `
+        },
 
-            mvvm:{
-                title:"MVVM",
-                desc:"Arquitectura moderna que separa la interfaz, la lógica y los datos. Facilita mantener aplicaciones escalables y limpias."
-            },
+        room:{
+            title:"Room Database",
+            content:`
+                <h4>¿Qué es?</h4>
+                <p>
+                    Biblioteca de persistencia local para Android basada en SQLite. Simplifica el manejo de datos
+                    offline con una capa más segura y ordenada.
+                </p>
 
-            python:{
-                title:"Python",
-                desc:"Lenguaje versátil utilizado para automatización de procesos, OCR, análisis de datos y desarrollo de herramientas."
-            },
+                <h4>¿Dónde lo utilizo?</h4>
+                <p>
+                    La uso para almacenar usuarios, productos, ventas, historial y configuraciones locales dentro
+                    de mis aplicaciones.
+                </p>
 
-            flet:{
-                title:"Flet",
-                desc:"Framework que permite crear aplicaciones modernas usando Python con interfaces visuales multiplataforma."
-            },
+                <h4>Proyectos relacionados</h4>
+                <ul>
+                    <li>DepotLink POS Mobile</li>
+                    <li>PepsOCR</li>
+                    <li>Taquería POS Android</li>
+                </ul>
+            `
+        },
 
-            opencv:{
-                title:"OpenCV",
-                desc:"Biblioteca de visión por computadora utilizada para procesamiento de imágenes y reconocimiento visual."
-            },
+        sqlite:{
+            title:"SQLite",
+            content:`
+                <h4>¿Qué es?</h4>
+                <p>
+                    Motor de base de datos ligero e integrado, ideal para aplicaciones locales y almacenamiento
+                    estructurado sin depender de internet.
+                </p>
 
-            ocr:{
-                title:"OCR",
-                desc:"Tecnología de reconocimiento óptico de caracteres. Permite extraer texto automáticamente desde imágenes o documentos."
-            },
+                <h4>¿Dónde lo utilizo?</h4>
+                <p>
+                    Lo utilizo como base de almacenamiento local para gestionar información de negocio, inventario,
+                    pedidos y registros históricos.
+                </p>
 
-            git:{
-                title:"Git",
-                desc:"Sistema de control de versiones utilizado para gestionar cambios y mantener historial de desarrollo."
-            },
+                <h4>Proyectos relacionados</h4>
+                <ul>
+                    <li>DepotLink POS Mobile</li>
+                    <li>Smart POS</li>
+                    <li>Taquería POS Android</li>
+                </ul>
+            `
+        },
 
-            github:{
-                title:"GitHub",
-                desc:"Plataforma para alojar repositorios Git, colaborar en proyectos y mantener versiones de código."
-            },
+        mvvm:{
+            title:"MVVM",
+            content:`
+                <h4>¿Qué es?</h4>
+                <p>
+                    Arquitectura que separa interfaz, lógica y datos para crear aplicaciones más limpias, escalables
+                    y fáciles de mantener.
+                </p>
 
-            html:{
-                title:"HTML",
-                desc:"Lenguaje de marcado utilizado para construir la estructura de sitios web y aplicaciones web."
-            },
+                <h4>¿Dónde lo utilizo?</h4>
+                <p>
+                    Lo aplico en mis proyectos Android para organizar correctamente el código y facilitar el
+                    crecimiento del sistema.
+                </p>
 
-            css:{
-                title:"CSS",
-                desc:"Lenguaje encargado del diseño visual, animaciones, estilos responsivos y experiencia de usuario."
-            }
+                <h4>Proyectos relacionados</h4>
+                <ul>
+                    <li>DepotLink POS Mobile</li>
+                    <li>Taquería POS Android</li>
+                </ul>
+            `
+        },
 
-        };
+        python:{
+            title:"Python",
+            content:`
+                <h4>¿Qué es?</h4>
+                <p>
+                    Lenguaje versátil utilizado para automatización, herramientas de escritorio, OCR, procesamiento
+                    de datos y lógica de negocio.
+                </p>
 
-        title.textContent = data[tech].title;
-        desc.textContent = data[tech].desc;
+                <h4>¿Dónde lo utilizo?</h4>
+                <p>
+                    Lo utilizo para automatizar procesos, desarrollar herramientas y construir soluciones rápidas
+                    para tareas operativas.
+                </p>
 
-        document.getElementById("techDetails").scrollIntoView({
-            behavior: "smooth",
-            block: "start"
-        });
+                <h4>Proyectos relacionados</h4>
+                <ul>
+                    <li>Taquería Yeshua POS</li>
+                    <li>Smart POS</li>
+                    <li>Automatizaciones propias</li>
+                </ul>
+            `
+        },
 
+        flet:{
+            title:"Flet",
+            content:`
+                <h4>¿Qué es?</h4>
+                <p>
+                    Framework que permite crear interfaces modernas con Python, ideal para prototipos y aplicaciones
+                    visuales multiplataforma.
+                </p>
+
+                <h4>¿Dónde lo utilizo?</h4>
+                <p>
+                    Lo utilizo para construir aplicaciones con una interfaz limpia, práctica y enfocada en
+                    productividad.
+                </p>
+
+                <h4>Proyectos relacionados</h4>
+                <ul>
+                    <li>Taquería Yeshua POS</li>
+                    <li>Smart POS</li>
+                </ul>
+            `
+        },
+
+        opencv:{
+            title:"OpenCV",
+            content:`
+                <h4>¿Qué es?</h4>
+                <p>
+                    Biblioteca de visión por computadora usada para procesar imágenes, detectar patrones y preparar
+                    información visual.
+                </p>
+
+                <h4>¿Dónde lo utilizo?</h4>
+                <p>
+                    Lo utilizo en tareas de procesamiento visual, OCR y manipulación de imágenes para análisis
+                    automático.
+                </p>
+
+                <h4>Proyectos relacionados</h4>
+                <ul>
+                    <li>PepsOCR</li>
+                    <li>Automatizaciones con imágenes</li>
+                </ul>
+            `
+        },
+
+        ocr:{
+            title:"OCR",
+            content:`
+                <h4>¿Qué es?</h4>
+                <p>
+                    Tecnología de reconocimiento óptico de caracteres que permite extraer texto de imágenes o
+                    documentos escaneados.
+                </p>
+
+                <h4>¿Dónde lo utilizo?</h4>
+                <p>
+                    Lo utilizo para automatizar lectura de texto, reconocimiento de datos y captura de información
+                    visual.
+                </p>
+
+                <h4>Proyectos relacionados</h4>
+                <ul>
+                    <li>PepsOCR</li>
+                    <li>Procesos de captura automática</li>
+                </ul>
+            `
+        },
+
+        git:{
+            title:"Git",
+            content:`
+                <h4>¿Qué es?</h4>
+                <p>
+                    Sistema de control de versiones que permite registrar cambios, trabajar en ramas y mantener
+                    historial de desarrollo.
+                </p>
+
+                <h4>¿Dónde lo utilizo?</h4>
+                <p>
+                    Lo uso para organizar mis proyectos, controlar versiones y trabajar de forma ordenada en
+                    actualizaciones.
+                </p>
+
+                <h4>Proyectos relacionados</h4>
+                <ul>
+                    <li>Todos mis proyectos de código</li>
+                </ul>
+            `
+        },
+
+        github:{
+            title:"GitHub",
+            content:`
+                <h4>¿Qué es?</h4>
+                <p>
+                    Plataforma para alojar repositorios, colaborar con código y publicar proyectos de forma
+                    profesional.
+                </p>
+
+                <h4>¿Dónde lo utilizo?</h4>
+                <p>
+                    Lo uso para publicar mi portafolio, mostrar proyectos y mantener una presencia técnica pública.
+                </p>
+
+                <h4>Proyectos relacionados</h4>
+                <ul>
+                    <li>Portafolio Profesional</li>
+                    <li>DepotLink POS Mobile</li>
+                    <li>PepsOCR</li>
+                </ul>
+            `
+        },
+
+        html:{
+            title:"HTML",
+            content:`
+                <h4>¿Qué es?</h4>
+                <p>
+                    Lenguaje de marcado utilizado para estructurar contenido en páginas web y aplicaciones web.
+                </p>
+
+                <h4>¿Dónde lo utilizo?</h4>
+                <p>
+                    Lo utilizo para construir la estructura base de sitios, secciones, formularios, modales y
+                    componentes.
+                </p>
+
+                <h4>Proyectos relacionados</h4>
+                <ul>
+                    <li>Portafolio Profesional</li>
+                </ul>
+            `
+        },
+
+        css:{
+            title:"CSS",
+            content:`
+                <h4>¿Qué es?</h4>
+                <p>
+                    Lenguaje encargado del diseño visual, animaciones, responsividad y estilo general de una
+                    interfaz.
+                </p>
+
+                <h4>¿Dónde lo utilizo?</h4>
+                <p>
+                    Lo utilizo para crear la identidad visual del portafolio, efectos premium, animaciones y
+                    adaptación móvil.
+                </p>
+
+                <h4>Proyectos relacionados</h4>
+                <ul>
+                    <li>Portafolio Profesional</li>
+                </ul>
+            `
+        },
+
+        firebase:{
+            title:"Firebase",
+            content:`
+                <h4>¿Qué es?</h4>
+                <p>
+                    Plataforma cloud de Google para autenticación, base de datos, sincronización y servicios
+                    backend rápidos.
+                </p>
+
+                <h4>¿Dónde lo utilizo?</h4>
+                <p>
+                    Lo utilizo en proyectos donde necesito sincronización, almacenamiento remoto o soporte
+                    cloud.
+                </p>
+
+                <h4>Proyectos relacionados</h4>
+                <ul>
+                    <li>PepsOCR</li>
+                    <li>DepotLink POS Mobile</li>
+                </ul>
+            `
+        },
+
+        mlkit:{
+            title:"ML Kit",
+            content:`
+                <h4>¿Qué es?</h4>
+                <p>
+                    Kit de inteligencia artificial de Google para reconocimiento de texto, rostros, códigos y
+                    análisis visual.
+                </p>
+
+                <h4>¿Dónde lo utilizo?</h4>
+                <p>
+                    Lo utilizo para extraer información visual y automatizar tareas como lectura de texto y
+                    detección de elementos.
+                </p>
+
+                <h4>Proyectos relacionados</h4>
+                <ul>
+                    <li>PepsOCR</li>
+                </ul>
+            `
+        },
+
+        restapi:{
+            title:"REST API",
+            content:`
+                <h4>¿Qué es?</h4>
+                <p>
+                    Arquitectura de comunicación entre aplicaciones mediante peticiones HTTP y respuestas
+                    estructuradas.
+                </p>
+
+                <h4>¿Dónde lo utilizo?</h4>
+                <p>
+                    Lo utilizo para integrar servicios externos, conectar aplicaciones y obtener datos de forma
+                    ordenada.
+                </p>
+
+                <h4>Proyectos relacionados</h4>
+                <ul>
+                    <li>EDEV Analytics</li>
+                    <li>Integraciones externas</li>
+                </ul>
+            `
+        },
+
+        json:{
+            title:"JSON",
+            content:`
+                <h4>¿Qué es?</h4>
+                <p>
+                    Formato ligero para intercambio de datos entre aplicaciones, APIs y servicios.
+                </p>
+
+                <h4>¿Dónde lo utilizo?</h4>
+                <p>
+                    Lo utilizo para enviar y recibir información entre frontend, backend y servicios externos.
+                </p>
+
+                <h4>Proyectos relacionados</h4>
+                <ul>
+                    <li>EDEV Analytics</li>
+                    <li>APIs REST</li>
+                </ul>
+            `
+        },
+
+        fetch:{
+            title:"Fetch API",
+            content:`
+                <h4>¿Qué es?</h4>
+                <p>
+                    Interfaz moderna de JavaScript para realizar solicitudes a APIs y servicios remotos.
+                </p>
+
+                <h4>¿Dónde lo utilizo?</h4>
+                <p>
+                    Lo utilizo para consumir datos, enviar peticiones y conectar el portafolio con servicios
+                    externos.
+                </p>
+
+                <h4>Proyectos relacionados</h4>
+                <ul>
+                    <li>EDEV Analytics</li>
+                    <li>Portafolio Profesional</li>
+                </ul>
+            `
+        },
+
+        workers:{
+            title:"Cloudflare Workers",
+            content:`
+                <h4>¿Qué es?</h4>
+                <p>
+                    Plataforma serverless para ejecutar lógica backend sin administrar servidores tradicionales.
+                </p>
+
+                <h4>¿Dónde lo utilizo?</h4>
+                <p>
+                    Lo utilizo para automatizaciones, endpoints ligeros y funciones backend de alto rendimiento.
+                </p>
+
+                <h4>Proyectos relacionados</h4>
+                <ul>
+                    <li>EDEV Analytics</li>
+                </ul>
+            `
+        },
+
+        kv:{
+            title:"Cloudflare KV",
+            content:`
+                <h4>¿Qué es?</h4>
+                <p>
+                    Almacenamiento distribuido clave-valor de Cloudflare para guardar información persistente de
+                    forma rápida.
+                </p>
+
+                <h4>¿Dónde lo utilizo?</h4>
+                <p>
+                    Lo utilizo para guardar datos de conteo, configuraciones y variables persistentes en sistemas
+                    serverless.
+                </p>
+
+                <h4>Proyectos relacionados</h4>
+                <ul>
+                    <li>EDEV Analytics</li>
+                </ul>
+            `
+        },
+
+        cron:{
+            title:"Cron Triggers",
+            content:`
+                <h4>¿Qué es?</h4>
+                <p>
+                    Sistema de ejecución programada para correr tareas automáticas en horarios definidos.
+                </p>
+
+                <h4>¿Dónde lo utilizo?</h4>
+                <p>
+                    Lo utilizo para ejecutar tareas periódicas como reportes, sincronizaciones y automatizaciones.
+                </p>
+
+                <h4>Proyectos relacionados</h4>
+                <ul>
+                    <li>EDEV Analytics</li>
+                </ul>
+            `
+        },
+
+        telegram:{
+            title:"Telegram Bot API",
+            content:`
+                <h4>¿Qué es?</h4>
+                <p>
+                    API para crear bots y automatizar envíos de mensajes, alertas y notificaciones.
+                </p>
+
+                <h4>¿Dónde lo utilizo?</h4>
+                <p>
+                    Lo utilizo para mandar reportes automáticos, avisos y notificaciones de sistemas.
+                </p>
+
+                <h4>Proyectos relacionados</h4>
+                <ul>
+                    <li>EDEV Analytics</li>
+                </ul>
+            `
+        },
+
+        vision:{
+            title:"Computer Vision",
+            content:`
+                <h4>¿Qué es?</h4>
+                <p>
+                    Rama de la inteligencia artificial enfocada en análisis visual, detección y comprensión de
+                    imágenes.
+                </p>
+
+                <h4>¿Dónde lo utilizo?</h4>
+                <p>
+                    Lo utilizo para automatizar reconocimiento visual, lectura de documentos y análisis de
+                    imágenes.
+                </p>
+
+                <h4>Proyectos relacionados</h4>
+                <ul>
+                    <li>PepsOCR</li>
+                    <li>Automatizaciones con imágenes</li>
+                </ul>
+            `
+        }
+
+    };
+
+    function openTechModal(tech){
+
+        const modal =
+            document.getElementById("techModal");
+
+        if(!techInfo[tech]) return;
+
+        document.getElementById(
+            "modalTechTitle"
+        ).innerHTML = techInfo[tech].title;
+
+        document.getElementById(
+            "modalTechContent"
+        ).innerHTML = techInfo[tech].content;
+
+        modal.classList.add("active");
+
+        document.body.style.overflow = "hidden";
     }
 
-    </script>
-    <script>
+    function closeTechModal(){
 
+        document
+            .getElementById("techModal")
+            .classList.remove("active");
+
+        document.body.style.overflow = "";
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+
+        const modal =
+            document.getElementById("techModal");
+
+        if(!modal) return;
+
+        modal.addEventListener("click", (e) => {
+
+            if(e.target === modal){
+
+                closeTechModal();
+
+            }
+
+        });
+
+        document.addEventListener("keydown", (e) => {
+
+            if(e.key === "Escape"){
+
+                closeTechModal();
+
+            }
+
+        });
+
+        let techStartY = 0;
+
+        modal.addEventListener("touchstart", (e) => {
+
+            techStartY =
+                e.changedTouches[0].clientY;
+
+        });
+
+        modal.addEventListener("touchend", (e) => {
+
+            const endY =
+                e.changedTouches[0].clientY;
+
+            if(endY - techStartY > 100){
+
+                closeTechModal();
+
+            }
+
+        });
+
+    });
+
+
+    /*
+        Expande o contrae
+        una tarjeta de soluciones.
+    */
     function toggleService(type){
 
         const cards =
@@ -1502,6 +2398,10 @@
     </script>
     <script>
 
+    /*
+        Expande o contrae
+        un elemento de la trayectoria.
+    */
     function toggleTimeline(id){
 
         const items =
@@ -1522,82 +2422,67 @@
     }
 
     </script>
-    <script>
+        <div id="logoModal" class="logo-modal">
+            <img src="assets//icons/logo-edev.png" alt="EDev">
+        </div>
+        
+        <script>
+
+    /*
+        Modal del logotipo EDev
+        Permite ampliar el logo al hacer clic.
+    */
+
     document.addEventListener("DOMContentLoaded", () => {
 
-        const navOptions = document.getElementById("navOptions");
-        const navbar = document.querySelector(".navbar");
-
-        navOptions.addEventListener("click", () => {
-
-            navbar.classList.toggle("open");
-
-            navOptions.textContent =
-                navbar.classList.contains("open")
-                ? "✕"
-                : "☰";
-        });
-
-        document.querySelectorAll(".nav-menu a").forEach(link => {
-
-            link.addEventListener("click", () => {
-
-                navbar.classList.remove("open");
-                navOptions.textContent = "☰";
-
-            });
-
-        });
-
-    });
-    </script>
-        <div id="logoModal" class="logo-modal">
-        <img src="assets//icons/logo-edev.png" alt="EDev">
-    </div>
-    <script>
         const logo = document.getElementById("logoExpandible");
         const modal = document.getElementById("logoModal");
 
+        if (!logo || !modal) return;
+
         logo.addEventListener("click", (e) => {
+
             e.stopPropagation();
+
+            modal.classList.remove(
+                "theme-green",
+                "theme-purple"
+            );
+
+            if(
+                document.body.dataset.theme ===
+                "purple"
+            ){
+
+                modal.classList.add(
+                    "theme-purple"
+                );
+
+            }else{
+
+                modal.classList.add(
+                    "theme-green"
+                );
+
+            }
+
             modal.classList.add("active");
+
         });
 
         modal.addEventListener("click", () => {
             modal.classList.remove("active");
         });
-        </script>
-        <script>
 
-        const reveals =
-        document.querySelectorAll(
-        '.service-card, .about-card, .about-left, .about-right, .tech-item, .project-card, .timeline-item, .education-card, .contact-card, .section-header'
-        );
+    });
 
-        const observer =
-        new IntersectionObserver(entries=>{
-
-            entries.forEach(entry=>{
-
-                if(entry.isIntersecting){
-                    entry.target.classList.add("show");
-                }
-
-            });
- 
-        },{
-            threshold:0.15
-        });
-
-        reveals.forEach(item=>{
-
-            item.classList.add("reveal");
-            observer.observe(item);
-
-        });
     </script>
 
     <script>
+    /*
+        Obtiene el contador de visitas
+        desde Cloudflare Workers.
+    */
     async function loadVisits() {
         try {
             const response = await fetch(
@@ -1617,6 +2502,96 @@
 
     loadVisits();
     </script>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const revealItems = document.querySelectorAll(
+            ".service-card, .about-card, .about-left, .about-right, .tech-item, .project-card, .timeline-item, .education-card, .contact-card, .section-header"
+        );
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                }
+            });
+        }, {
+            threshold: 0.15
+        });
+
+        revealItems.forEach(item => {
+            item.classList.add("reveal");
+            revealObserver.observe(item);
+        });
+    });
+    </script>
     
+        <div class="tech-modal-overlay" id="techModal">
+
+        <div class="tech-modal">
+
+            <button class="tech-close"
+                onclick="closeTechModal()">
+                ✕
+            </button>
+
+            <h3 id="modalTechTitle"></h3>
+
+            <div id="modalTechContent"></div>
+
+        </div>
+
+    </div>
+    <script>
+    const navOptions =
+        document.getElementById("navOptions");
+
+    const navbar =
+        document.querySelector(".navbar");
+
+    if(navOptions){
+
+        navOptions.addEventListener("click", () => {
+
+            navbar.classList.toggle("open");
+
+            navOptions.textContent =
+                navbar.classList.contains("open")
+                ? "✕"
+                : "☰";
+
+        });
+
+    }
+    const navLinks =
+        document.querySelectorAll(".nav-menu .nav-link");
+
+    navLinks.forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            navbar.classList.remove("open");
+
+            navOptions.textContent = "☰";
+
+        });
+
+    });
+    const mobileCvBtn =
+        document.querySelector(".nav-menu .cv-btn");
+
+    if(mobileCvBtn){
+
+        mobileCvBtn.addEventListener("click", () => {
+
+            navbar.classList.remove("open");
+
+            navOptions.textContent = "☰";
+
+        });
+
+    }
+    </script>
+
 </body>
 </html>
