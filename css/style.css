@@ -1615,10 +1615,14 @@ body::before {
 /* Animación de entrada del contenido del hero. */
 .stretch-effect{
     opacity:1;
-    transform:translateY(40px) scale(.92);
-    animation:none
+    transform:none;
+    animation:none;
+    transition:transform .15s ease;
 }
 
+.stretch-effect:hover{
+    transform:translateY(-2px);
+}
 /* Etiqueta descriptiva superior del hero. */
 .hero-tag{animation-delay:.1s;}
 
@@ -3500,12 +3504,6 @@ body::before {
 
     will-change: transform;
 }
-.project-card{
-
-    content-visibility:auto;
-
-    contain-intrinsic-size:800px;
-}
 .background-system{
 
     pointer-events:none;
@@ -3524,14 +3522,6 @@ body::before {
     transform:translateZ(0);
 
     backface-visibility:hidden;
-}
-.project-card{
-    content-visibility:auto;
-    contain-intrinsic-size:800px;
-}
-.project-card{
-    content-visibility:auto;
-    contain-intrinsic-size:800px;
 }
 /* Ocultar botones de proyectos */
 .project-buttons{
@@ -3910,6 +3900,81 @@ body::before {
 
         padding: 8px;
 
+    }
+
+}
+@media (max-width: 768px) {
+    .reveal,
+    .about-left,
+    .about-right {
+        opacity: 1;
+        transform: none;
+    }
+}
+@media (max-width:768px){
+
+    .reveal{
+        opacity:1 !important;
+        transform:none !important;
+    }
+
+}
+/* ==========================================
+   ANDROID ULTRA LIGERO
+   ========================================== */
+@media (max-width:768px){
+
+    /* Fondo estático */
+    .background-system,
+    .bg-particles,
+    .data-line,
+    .bg-grid,
+    .bg-orb{
+        animation:none !important;
+    }
+
+    /* Quitar halos pesados */
+    .hero-image::before,
+    .hero-image-ring,
+    .logo-halo,
+    .logo-particles,
+    .logo-shine{
+        display:none !important;
+    }
+
+    
+    /* Desactivar animaciones generales */
+    .stretch-effect,
+    .reveal,
+    .service-card,
+    .about-card,
+    .education-card,
+    .contact-card,
+    .timeline-item,
+    .project-card,
+    .tech-item,
+    .hero-main::after{
+        animation:none !important;
+        transition:none !important;
+    }
+
+    /* Todo visible siempre */
+    .reveal{
+        opacity:1 !important;
+        transform:none !important;
+    }
+
+    /* Fondo simple */
+    body{
+        background:
+            radial-gradient(circle at 30% 30%, rgba(82,240,58,.15), transparent 35%),
+            radial-gradient(circle at 70% 70%, rgba(122,47,255,.15), transparent 35%),
+            #050816 !important;
+    }
+    /* Partículas estáticas */
+    .bg-particles span{
+        animation:none !important;
+        transform:none !important;
     }
 
 }
